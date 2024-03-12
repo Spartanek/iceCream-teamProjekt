@@ -1,2 +1,12 @@
 @import './common';
 
+@import './base/reset';
+@import './base/container';
+
+@import './components/header';
+@import './components/hero';
+@import './components/products';
+@import './components/process';
+@import './components/slider-section';
+@import './components/comments';
+@import './components/footer';
