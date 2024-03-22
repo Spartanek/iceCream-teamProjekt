@@ -15,11 +15,13 @@ h1 {
   font-size: 34px;
   text-transform: uppercase;
   letter-spacing: 1.36px;
+  color: pink;
 }
 h2 {
   font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 1.26px;
+  color: #fff5f6;
 }
 
 .social-media a {
@@ -48,7 +50,7 @@ h2 {
 }
 
 footer {
-  color: #907e82;
+  color: black;
   font-size: 14px;
   text-align: center;
 }
