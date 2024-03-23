@@ -59,3 +59,20 @@ text-align: center;
 margin-bottom: 40px;
     color: rgb(0, 0, 0);
 }
+
+.card-divider{
+display: flex;
+justify-content: center;
+margin-bottom: 18px;
+}
+
+.divider-item{
+    display: block;
+    width: 4px;
+height: 4px;
+border-radius: 50%;
+background: var(--accent-color1);
+&:not(:last-child){
+    margin-right: 10px;
+}
+}
