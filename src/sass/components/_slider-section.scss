@@ -1,0 +1,129 @@
+.slider{
+    padding: 80px 0;
+}
+.swiper{
+    justify-content: center;
+    margin: 0 auto;
+}
+.swiper-button-prev:after{
+    display: none;
+}
+.swiper-button-next:after{
+    display: none;
+}
+
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: var(--accent-color1);
+    // opacity: 0.6;
+    // background-image: url(/assets/svg/svg-before-after/slider-paginationHouse.svg);
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // width: 12px;
+    // height: 11px;
+
+}
+// .swiper-pagination-bullet-active{
+    // background-color: white !important;
+
+    // width: 12px !important;
+// }
+// .swiper-pagination-bullet-active{
+//         background-color: white;
+
+//     width: 100px;
+// }
+
+
+
+
+.swiper-scrollbar{
+display: none;
+}
+.img-slide{
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    @media screen and (min-width: 760px){
+        margin-bottom: 19px;
+    }
+    @media screen and (min-width: 1110px){
+        margin-bottom: 15px;
+    }
+}
+.card-icecream{
+    padding: 60px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background: var(--slider-comment-background);
+    @media screen and (min-width: 760px){
+        margin-bottom: 24px;
+    }
+    @media screen and (min-width: 1110px){
+        margin-bottom: 15px;
+    }
+}
+.card-text{
+    width: 157px;
+    height: 239px;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 255%;
+    text-align: center;
+    color: #000000;
+
+    &::before{
+    content: "";
+    display: block;
+    width: 54px;
+    height: 40px;
+    margin-bottom: -24px;
+    margin-left: 6px;
+    background-image: url(/assets/svg/svg-before-after/slider-svgTwoCommas.svg);
+    background-repeat: no-repeat;
+    @media screen and (min-width: 760px){
+        margin-left: 0;
+    }
+}
+@media screen and (min-width: 760px){
+    width: 440px;
+height: 98px;
+font-size: 14px;
+line-height: 216%;
+margin: 0 auto;
+}
+@media screen and (min-width: 1110px){
+    width: 750px;
+height: 68px;
+font-size: 16px;
+line-height: 186%;
+}
+}
+.carousel-text{
+font-family: DM Sans;
+font-size: 14px;
+font-weight: 500;
+line-height: 186%;
+text-align: center;
+margin-bottom: 40px;
+    color: #000000;
+}
+.card-divider{
+display: flex;
+justify-content: center;
+margin-bottom: 18px;
+@media screen and (min-width: 760px){
+    margin-bottom: 14px;
+}
+}
+.divider-item{
+    display: block;
+    width: 4px;
+height: 4px;
+border-radius: 50%;
+background: var(--accent-color1);
+&:not(:last-child){
+    margin-right: 10px;
+}
+}
