@@ -44,12 +44,24 @@ display: none;
     display: flex;
     margin: 0 auto;
     margin-bottom: 30px;
+    @media screen and (min-width: 760px){
+        margin-bottom: 19px;
+    }
+    @media screen and (min-width: 1110px){
+        margin-bottom: 15px;
+    }
 }
 .card-icecream{
     padding: 60px;
     margin: 0 auto;
     margin-bottom: 40px;
     background: var(--slider-comment-background);
+    @media screen and (min-width: 760px){
+        margin-bottom: 24px;
+    }
+    @media screen and (min-width: 1110px){
+        margin-bottom: 15px;
+    }
 }
 .card-text{
     width: 157px;
@@ -70,9 +82,24 @@ display: none;
     margin-left: 6px;
     background-image: url(/assets/svg/svg-before-after/slider-svgTwoCommas.svg);
     background-repeat: no-repeat;
+    @media screen and (min-width: 760px){
+        margin-left: 0;
+    }
+}
+@media screen and (min-width: 760px){
+    width: 440px;
+height: 98px;
+font-size: 14px;
+line-height: 216%;
+margin: 0 auto;
+}
+@media screen and (min-width: 1110px){
+    width: 750px;
+height: 68px;
+font-size: 16px;
+line-height: 186%;
 }
 }
-
 .carousel-text{
 font-family: DM Sans;
 font-size: 14px;
@@ -80,13 +107,15 @@ font-weight: 500;
 line-height: 186%;
 text-align: center;
 margin-bottom: 40px;
-    color: rgb(0, 0, 0);
+    color: #000000;
 }
-
 .card-divider{
 display: flex;
 justify-content: center;
 margin-bottom: 18px;
+@media screen and (min-width: 760px){
+    margin-bottom: 14px;
+}
 }
 .divider-item{
     display: block;
