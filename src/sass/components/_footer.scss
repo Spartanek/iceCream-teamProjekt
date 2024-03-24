@@ -1,0 +1,59 @@
+.content {
+    text-align: center;
+    color: #d41443;
+  }
+  
+  .top {
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 1.36px;
+    color: pink;
+  }
+   .bottom {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.26px;
+    color: #fff5f6;
+  }
+  
+  .social-media a {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa-facebook {
+    background: #3b5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55acee;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #e4405f;
+    color: white;
+  }
+  
+  footer {
+    color: black;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Background color animation */
+  @keyframes backgroundAnimation {
+    from {
+      background-color: #fff5f6;
+    }
+    to {
+      background-color: #fea5bb;
+    }
+  }
+  
