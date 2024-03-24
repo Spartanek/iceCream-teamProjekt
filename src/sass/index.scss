@@ -1,12 +1,17 @@
 @import './common';
 
 @import './base/reset';
+@import './base/root';
+@import './base/visually-hidden';
 @import './base/container';
 
 @import './components/header';
+@import './components/mobile-menu';
 @import './components/hero';
+@import './components/modal';
 @import './components/products';
 @import './components/process';
+@import './components/img-section';
 @import './components/slider-section';
 @import './components/comments';
 @import './components/footer';
