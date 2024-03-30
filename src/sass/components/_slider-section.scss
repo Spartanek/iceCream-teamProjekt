@@ -91,7 +91,9 @@ display: none;
     font-weight: 500;
     line-height: 255%;
     text-align: center;
-    color: #000000;
+    color: var(--special-color);
+
+    // background-image: repeating-linear-gradient(to top, #E1E1E1 0px 1px, transparent 1px 31px);
 
     &::before{
     content: "";
@@ -115,9 +117,9 @@ margin: 0 auto;
 }
 @media screen and (min-width: 1110px){
     width: 750px;
-height: 68px;
-font-size: 16px;
-line-height: 186%;
+    height: 68px;
+    font-size: 16px;
+    line-height: 186%;
 }
 }
 .carousel-text{
@@ -127,7 +129,7 @@ font-weight: 500;
 line-height: 186%;
 text-align: center;
 margin-bottom: 40px;
-    color: #000000;
+    color: var(--special-color);
 }
 .card-divider{
 display: flex;
