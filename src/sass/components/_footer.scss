@@ -120,7 +120,7 @@ text-align: center;
     content: "";
     display: block;
     width: 100%;
-    border: 1px solid #e1e1e1;
+    border: 1px solid var(--color);
   }
   @media screen and (min-width: 760px){
     margin-bottom: 20px;
@@ -155,7 +155,7 @@ font-weight: 700;
 line-height: 17px;
 letter-spacing: 0px;
 text-align: center;
-  color: #333333;
+  color: var(--color-blackvariation1);
 }
 .button-close {
   position: absolute;
@@ -164,7 +164,7 @@ text-align: center;
   width: 18px;
   height: 18px;
   padding: 1px;
-  border: 1px solid #0000001a;
+  border: 1px solid var(--color-blackvariation2);
   border-radius: 8px;
   cursor: pointer;
   margin-bottom: 8px;
@@ -217,7 +217,7 @@ line-height: 17px;
 letter-spacing: 0px;
 text-align: center;
   margin-left: -50%;
-color: #333333;
+color: var(--color-blackvariation1);
 }
 .command-text{
   width: 216px;
@@ -228,7 +228,7 @@ font-weight: 300;
 line-height: 16px;
 letter-spacing: 0px;
 text-align: left;
-color: #666666;
+color: var(--color-greyvariaton1);
 }
 .command-div{
    margin-top: 10px;
@@ -236,7 +236,7 @@ color: #666666;
     content: "";
     display: block;
     width: 100%;
-    border: 1px solid #e1e1e1;
+    border: 1px solid var(--color);
    
   }
   @media screen and (min-width: 760px){
@@ -246,7 +246,7 @@ color: #666666;
 .command-p{
 width: 206px;
 height: 20px;
-color: #907e82;
+color: var(--color-greyvariaton2);
 font-family: DM Sans;
 font-size: 14px;
 font-weight: 700;
