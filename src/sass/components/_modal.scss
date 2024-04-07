@@ -1,21 +1,15 @@
-// modal
 .command-button {
   width: 180px;
   height: 44px;
 border-radius: 22px;
 margin-bottom: 10px;
-background: var(--general-color);
+background-color: var(--accent-color1);
 }
 .command-button span {
-  width: 83px;
-height: 44px;
- color: var(--accent-color1);
 font-family: DM Sans;
 font-size: 16px;
 font-weight: 700;
-line-height: 21px;
-letter-spacing: 0%;
-text-align: center;
+color: var(--general-color);
 }
 .no-scroll {
   overflow: hidden;
@@ -26,8 +20,8 @@ text-align: center;
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #00000080;
   opacity: 1;
+    background-color: #00000080;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -61,10 +55,10 @@ text-align: center;
     border: 1px solid var(--color);
   }
   @media screen and (min-width: 760px){
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   @media screen and (min-width: 1110px){
-    margin-bottom: 80px;
+    margin-bottom: 90px;
   }
 }
 .wrapper-command{
@@ -80,39 +74,34 @@ text-align: center;
 .block-command{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
 }
 .logotype-modal{
-  width: 100px;
-  margin-right: 26px;
+    width: 100px;
 }
 .command-title{
 font-family: DM Sans;
-font-size: 14.01px;
+font-size: 15px;
 font-weight: 700;
 line-height: 17px;
-letter-spacing: 0px;
-text-align: center;
-  color: var(--color-blackvariation1);
+color: var(--color-blackvariation1);
 }
-.button-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 18px;
-  height: 18px;
-  padding: 1px;
-  border: 1px solid var(--color-blackvariation2);
-  border-radius: 8px;
-  cursor: pointer;
-  margin-bottom: 8px;
+.button{
+    width: 18;
+    height: 18;
+    background: var(--background-proccess-color);
+}
+.command-close{
+    width: 18px;
+height: 18px;
 }
 .block-list-command{
   width: 390px;
   margin: 0 auto;
   @media screen and (min-width: 760px){
-          margin: 0 auto;
-          width: 520px;
+        margin: 0 auto;
+        width: 520px;
     }
     @media screen and (min-width: 1110px){
       width: 790px;
@@ -122,18 +111,25 @@ text-align: center;
   @media screen and (min-width: 760px){
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 10px;
-        margin-bottom: 70px;
+        gap: 22px 10px;
+        margin-bottom: 50px;
     }
     @media screen and (min-width: 1110px){
-      grid-template-columns: repeat(3, 1fr);
-        row-gap: 10px;
-        margin-bottom: 105px;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+        margin-bottom: 110px;
     }
 }
 .item-command{
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+
+  &:not(:last-child){
+    margin-bottom: 20px;
+    @media screen and (min-width: 760px){
+        margin-bottom: 0;
+    }
+  }
 }
 .command-default{
   display: none;
@@ -144,54 +140,48 @@ text-align: center;
 .command-img{
   width: 35px;
   height: 35px;
-  margin-right: 8px;
-  margin-top: 8px;
+  margin: 8px 8px 0px 0px;
 }
 .command-name{
 font-family: DM Sans;
-font-size: 14.01px;
+font-size: 14px;
 font-weight: 700;
 line-height: 17px;
-letter-spacing: 0px;
 text-align: center;
-  margin-left: -50%;
+margin-left: -50%;
 color: var(--color-blackvariation1);
 }
 .command-text{
-  width: 216px;
-  height: 50px;
+width: 216px;
 font-family: DM Sans;
-font-size: 14.01px;
+font-size: 14px;
 font-weight: 300;
 line-height: 16px;
-letter-spacing: 0px;
-text-align: left;
 color: var(--color-greyvariaton1);
 }
 .command-div{
-   margin-top: 10px;
-  &::before{
-    content: "";
-    display: block;
-    width: 100%;
-    border: 1px solid var(--color);
-   
+    margin-top: 10px;
+    &::before{
+        content: "";
+        display: block;
+        width: 100%;
+        border: 1px solid var(--color);
   }
   @media screen and (min-width: 760px){
         margin-top: 0;
     }
 }
 .command-p{
-width: 206px;
+width: 180px;
 height: 20px;
-color: var(--color-greyvariaton2);
 font-family: DM Sans;
 font-size: 14px;
 font-weight: 700;
 line-height: 186%;
 margin: 0 auto;
 margin-top: 5px;
+color: var(--color-greyvariaton2);
  @media screen and (min-width: 1110px){
-      margin-top: 10px;
+    margin-top: 10px;
  }
 }
