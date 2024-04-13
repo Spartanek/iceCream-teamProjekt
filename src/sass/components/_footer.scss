@@ -11,7 +11,7 @@
 }
  .bottom {
   font-size: 22px;
-  text-transform: uppercase;
+  margin-right: 200px;
   letter-spacing: 1.26px;
   color: red;
 }
@@ -28,23 +28,27 @@ margin-left: 10px;
 /* Відстань між іконками */
 }
 
+
 .social-media a {
 display: block;
 width: 40px;
-/* Розмір іконок */
 height: 40px;
-background-color: #ddd;
-/* Тимчасовий колір фону для іконок */
+background-color: #ddd; /* Temporary background color for icons */
 border-radius: 50%;
 text-align: center;
-line-height: 40px;
-/* Вирівнювання іконки по вертикалі */
+line-height: 40px; /* Vertical alignment of the icon */
 transition: background-color 0.3s;
+fill: #333; /* Default color for SVG icons */
 }
 
 .social-media a:hover {
-background-color: #ccc;
-/* Колір фону для іконок при наведенні */
+background-color: #ccc; /* Background color for icons on hover */
+}
+
+/* Ensure SVG icons are not hidden */
+svg {
+display: inline-block;
+vertical-align: middle;
 }
 footer {
   color: black;
@@ -80,16 +84,5 @@ footer {
 
 .top, .bottom {
   text-align: center;
-}
-}
-
-/* Стилі для екранів з шириною менше 400px */
-@media (max-width: 400px) {
-.top {
-  font-size: 28px;
-}
-
-.bottom {
-  font-size: 18px;
 }
 }
