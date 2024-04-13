@@ -30,23 +30,27 @@
   /* Відстань між іконками */
 }
 
+
 .social-media a {
   display: block;
   width: 40px;
-  /* Розмір іконок */
   height: 40px;
-  background-color: #ddd;
-  /* Тимчасовий колір фону для іконок */
+  background-color: #ddd; /* Temporary background color for icons */
   border-radius: 50%;
   text-align: center;
-  line-height: 40px;
-  /* Вирівнювання іконки по вертикалі */
+  line-height: 40px; /* Vertical alignment of the icon */
   transition: background-color 0.3s;
+  fill: #333; /* Default color for SVG icons */
 }
 
 .social-media a:hover {
-  background-color: #ccc;
-  /* Колір фону для іконок при наведенні */
+  background-color: #ccc; /* Background color for icons on hover */
+}
+
+/* Ensure SVG icons are not hidden */
+svg {
+  display: inline-block;
+  vertical-align: middle;
 }
   footer {
     color: black;
@@ -103,9 +107,21 @@
         <p class="bottom"> Passion</p>
         <!-- Social Media Icons -->
         <ul class="social-media">
-            <li><a href="#" class="icon-github"></a></li>
-            <li><a href="#" class="icon-telegram"></a></li>
-            <li><a href="#" class="icon-facebook"></a></li>
+          <li><a href="https://github.com/yourusername" class="icon-github">
+            <svg viewBox="0 0 32 32">
+              <use xlink:href="#icon-github"></use>
+            </svg>
+          </a></li>
+          <li><a href="https://t.me/yourusername" class="icon-telegram">
+            <svg viewBox="0 0 41 32">
+              <use xlink:href="#icon-telegram"></use>
+            </svg>
+          </a></li>
+          <li><a href="https://www.facebook.com/yourusername" class="icon-facebook">
+            <svg viewBox="0 0 32 32">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+          </a></li>
         </ul>
         <p>Feel free to contact
             +61 (0) 383 766 284
