@@ -121,7 +121,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -149,8 +149,14 @@ a {
   --product-iceCream2: rgb(240, 209, 165);
   --product-iceCream3: rgb(194, 226, 151);
   --background-proccess-color: rgb(255, 245, 246);
+  --color: #e1e1e1;
   --slider-comment-background: #fafafa;
   --mobile-menu-background: #e17992;
+  --special-color: #000;
+  --color-blackvariation1: #333333;
+  --color-blackvariation2: #0000001a;
+  --color-greyvariaton1: #666666;
+  --color-greyvariaton2: #907e82;
 }
 
 .visually-hidden {
@@ -162,7 +168,7 @@ a {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
   outline: 0;
@@ -201,7 +207,7 @@ a {
 }
 .section-process .h3 {
   color: rgb(255, 165, 186);
-  font-family: "Titan One", sans-serif;
+  font-family: 'Titan One', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -211,7 +217,7 @@ a {
 }
 .section-process .h2 {
   color: rgb(212, 20, 67);
-  font-family: "Titan One", sans-serif;
+  font-family: 'Titan One', sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 41px;
@@ -255,7 +261,7 @@ a {
   width: 220px;
   height: 79px;
   color: rgb(0, 0, 0);
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 162%;
@@ -269,7 +275,7 @@ a {
   width: 220px;
   height: 155px;
   color: rgb(144, 126, 130);
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 162%;
@@ -283,7 +289,7 @@ a {
   position: absolute;
   width: 320px;
   height: 133px;
-  background-image: url(/assets/images/sectionbg1_1.png);
+  background-image: url(/assets/img/mobile/2x/process/milk-spot.webp);
   top: 766px;
 }
 .section-process .button-rectangle-1 {
@@ -310,7 +316,7 @@ a {
   width: 83px;
   height: 44px;
   color: rgb(212, 20, 67);
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
@@ -347,7 +353,7 @@ a {
   margin: 0;
   margin-top: 16px;
   color: rgb(212, 20, 67);
-  font-family: "Titan One", sans-serif;
+  font-family: 'Titan One', sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 41px;
@@ -357,7 +363,7 @@ a {
 }
 .section-process .desc-group.desc-group > .desc-group-text {
   color: rgb(0, 0, 0);
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 170%;
@@ -376,7 +382,7 @@ a {
   display: block;
   width: 33px;
   height: 50px;
-  background-image: url(/assets/images/icon-bucket.png);
+  background-image: url(/assets/img/mobile/1x/process/1item-process-mob-1x.webp);
 }
 .section-process .desc-group#two {
   margin-top: 38px;
@@ -385,7 +391,7 @@ a {
   display: block;
   width: 50px;
   height: 50px;
-  background-image: url(/assets/images/icon-apples.png);
+  background-image: url(/assets/img/mobile\1 xprocess\2 item-process-mob-1x.webp);
 }
 .section-process .desc-group#three {
   margin-top: 38px;
@@ -394,5 +400,5 @@ a {
   display: block;
   width: 44px;
   height: 50px;
-  background-image: url(/assets/images/icon-heart.png);
+  background-image: url(/assets/img/mobile\1 xprocess\3 item-process-mob-1x.webp);
 }
