@@ -1,4 +1,4 @@
-.products-title
+.products-subtitle
 {
     width: 142px;
     height: 21px;
@@ -17,9 +17,22 @@ letter-spacing: 0%;
 text-align: center;
 text-transform: uppercase;
 
+
+
+@media screen and (min-width:768px){
+    width: 205px;
+    height: 30px;
 }
 
-.products-subtitle{
+@media screen and (min-width:1200px){
+    width: 249px;
+    height: 34px;
+}
+
+}
+
+
+.products-title{
 
     width: 200px;
     height: 36px;
@@ -38,14 +51,43 @@ text-transform: uppercase;
     text-transform: uppercase;
     
     margin-bottom: 141px;
+
+    @media screen and (min-width:768px){
+        margin-bottom: 150px;
+        width: 283px;
+        height: 55px;
+
+    }
+    
+    @media screen and (min-width:1200px){
+        margin-bottom: 259px;
+        width: 350px;
+        height: 66px;
+    }
 }
+
+
+
 
 .products-list{
 display: flex;
 flex-direction: column;
 
+@media screen and (min-width:768px){
+
+padding: 0px 36px;
+display: flex;
+flex-direction: row;
+}
+
+@media screen and (min-width:1200px){
+    padding: 0px 117px;
+    display: flex;
+    flex-direction: row;
+}
 
 }
+
 
 .products-list-item{
 position: relative;
@@ -57,13 +99,25 @@ margin: 0 auto;
 padding-top: 161px;
 justify-items: center;
 align-items: center;
+@media screen and (min-width:1200px){
+    width: 329px;
+    height: 525px;
+}
+
 }
 .products-list-item:not(:last-child){
     margin-bottom: 129px;
 }
 
-.last-child{
-margin-bottom: 98px;
+.products-list-item:not(:first-child){
+    @media screen and (min-width:768px){
+        margin-left: 20px;
+        
+            }
+            
+            @media screen and (min-width:1200px){
+                margin-left: 30px;
+            }
 }
 
 .item1{
@@ -82,10 +136,14 @@ position: relative;
 }
 
 .iceCream1{
+
 position: absolute;
 top: -25%;
 left: 50%;
 transform: translateX( -50%);
+        @media screen and (min-width:1200px){
+            top: -40%;
+        }
 }
 
 .iceCream2{
@@ -93,6 +151,9 @@ transform: translateX( -50%);
     top: -25%;
     left: 50%;
     transform: translateX( -50%);
+    @media screen and (min-width:1200px){
+        top: -40%;
+    }
 }
 
 .iceCream3{
@@ -100,6 +161,9 @@ transform: translateX( -50%);
     top: -25%;
     left: 50%;
     transform: translateX( -50%);
+    @media screen and (min-width:1200px){
+        top: -40%;
+    }
 }
 
 
@@ -116,6 +180,17 @@ line-height: 23px;
 letter-spacing: 4%;
 text-align: center;
 text-transform: uppercase;
+
+@media screen and (min-width:768px){
+    width: 199px;
+    height: 23px;
+    
+        }
+        
+        @media screen and (min-width:1200px){
+            width: 209px;
+            height: 34px;
+        }
 }
 
 .products-list-item-text{
@@ -130,6 +205,17 @@ letter-spacing: 4%;
 text-align: center;
 margin: 0 auto;
 margin-top: 30px;
+@media screen and (min-width:768px){
+    width: 198px;
+    height: 124px;
+    
+        }
+        
+        @media screen and (min-width:1200px){
+            width: 241px;
+            height: 106px;
+            margin-top: 32px;
+        }
 }
 
 // .products-list-item-text::before{
@@ -156,9 +242,6 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-
-
-
 }
 
 .products-list-item-button
@@ -170,7 +253,11 @@ height: 40px;
 margin: 0 auto;
 display: flex;
 position: relative;
-bottom: -21px;
+bottom: -41px;
+@media screen and (min-width:1200px){
+    bottom: -71px;
+}
+
 
 }
 .products-list-item-subtitle{
@@ -178,12 +265,23 @@ bottom: -21px;
     height: 10px;
     border-radius: 50%;
     color: var(--general-color);
-    font-size: 40px;
+    font-size: 50px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     display: flex;
+    margin-bottom: 30px;
+    
+    @media screen and (min-width:768px){
+    
+        font-size: 50px
+    }
+    
+    @media screen and (min-width:1200px){
+        font-size: 70px;
+    
+    }
 
 }
 
@@ -198,5 +296,6 @@ flex-direction: row;
 margin-top: 15px;
 margin-bottom: 30px;
 display: flex;
+
 }
 
