@@ -1,0 +1,59 @@
+.hero{
+    padding-top: 76px;
+    padding-bottom: 190px;
+    background-color: var(--accent-color2);
+    background-image: url(/assets/img/mobile/1x/hero/big-IceCream-mob-1x.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+            background-image: url(/assets/img/mobile/2x/hero/big-IceCream-mob-2x.webp);
+        }
+}
+.hero-title{
+width: 217px;
+height: 106px;
+font-family: Titan One;
+font-weight: 400;
+font-size: 26px;
+color: var(--general-color);
+margin-bottom: 20px;
+}
+.hero-span{
+    text-transform: uppercase;
+    font-size: 48px;
+    color: var(--accent-color1);
+}
+.hero-button-products{
+width: 62px;
+height: 24px;
+border-radius: 20px;
+cursor: pointer;
+margin-right: 8px;
+background: var(--accent-color1);
+    & > span{
+font-family: DM Sans;
+font-size: 10px;
+font-weight: 400;
+color: var(--general-color);
+}
+}
+.hero-button-made{
+    width: 83px;
+height: 24px;
+border-radius: 20px;
+cursor: pointer;
+background: var(--general-color);
+    & > span{
+font-family: DM Sans;
+font-size: 10px;
+font-weight: 400;
+color: var(--accent-color1);
+}
+}
+.block-text{
+    display: none;
+}
+.list-number{
+    display: none;
+}
