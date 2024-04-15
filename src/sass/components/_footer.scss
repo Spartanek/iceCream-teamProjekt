@@ -1,0 +1,128 @@
+.content {
+  text-align: center;
+  color: #d41443;
+}
+
+.top {
+  font-size: 34px;
+  text-transform: uppercase;
+  letter-spacing: 1.36px;
+  color: pink;
+}
+.bottom {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.26px;
+  color: #fff5f6;
+}
+
+.social-media a {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-instagram {
+  background: #e4405f;
+  color: white;
+}
+
+ .bottom {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.26px;
+  color: red;
+}
+
+.social-media {
+list-style: none;
+display: flex;
+justify-content: flex-end;
+padding: 0;
+}
+
+.social-media li {
+margin-left: 10px;
+/* Відстань між іконками */
+}
+
+.social-media a {
+display: block;
+width: 40px;
+/* Розмір іконок */
+height: 40px;
+background-color: #ddd;
+/* Тимчасовий колір фону для іконок */
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+/* Вирівнювання іконки по вертикалі */
+transition: background-color 0.3s;
+}
+
+.social-media a:hover {
+background-color: #ccc;
+/* Колір фону для іконок при наведенні */
+}
+footer {
+  color: black;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Background color animation */
+@keyframes backgroundAnimation {
+  from {
+    background-color: #fff5f6;
+  }
+  to {
+    background-color: #fea5bb;
+  }
+}
+/* Стилі для екранів з шириною менше 600px */
+@media (max-width: 600px) {
+.social-media {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-media li {
+  margin: 5px;
+}
+
+.social-media a {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.top, .bottom {
+  text-align: center;
+}
+}
+
+/* Стилі для екранів з шириною менше 400px */
+@media (max-width: 400px) {
+.top {
+  font-size: 28px;
+}
+
+.bottom {
+  font-size: 18px;
+}
+
+}
