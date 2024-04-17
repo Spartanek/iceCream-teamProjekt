@@ -1,90 +1,69 @@
-.content {
-  text-align: center;
-  color: #d41443;
-}
-
-.top {
-  font-size: 40px;
-  text-transform: uppercase;
-  letter-spacing: 1.36px;
-  color: pink;
-  font-weight: 1000; /* Adjust the weight as needed */
-}
- .bottom {
-  font-size: 60px;
-  margin-right: 200px;
-  letter-spacing: 1.26px;
-  color: red;
-  font-weight: 1000; /* Adjust the weight as needed */
-}
-
-.social-media {
-list-style: none;
-display: flex;
-justify-content: flex-end;
-padding: 0;
-}
-
-.social-media li {
-margin-left: 10px;
-/* Відстань між іконками */
-}
-
-
-.social-media a {
-display: block;
-width: 40px;
-height: 40px;
-background-color: #ddd; /* Temporary background color for icons */
-border-radius: 50%;
-text-align: center;
-line-height: 40px; /* Vertical alignment of the icon */
-transition: background-color 0.3s;
-fill: #333; /* Default color for SVG icons */
-}
-
-.social-media a:hover {
-background-color: #ccc; /* Background color for icons on hover */
-}
-
-/* Ensure SVG icons are not hidden */
-svg {
-display: inline-block;
-vertical-align: middle;
-}
 footer {
-  color: black;
-  font-size: 14px;
-  text-align: center;
+  padding-bottom: 25px;
+  background-color: rgb(255, 245, 246);
 }
 
-/* Background color animation */
-@keyframes backgroundAnimation {
-  from {
-    background-color: #fff5f6;
+.footer-heading {
+  margin-bottom: 15px;
+  width: 230px;
+  height: 40px;
+  color: var(--product-iceCream1);
+  font-family: 'Titan One', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.footerHeading-span {
+  width: 200px;
+  height: 75px;
+  color: rgb(212, 20, 67);
+  font-family: 'Titan One', sans-serif;
+  font-size: 34px;
+  margin-bottom: 45px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.mediaList {
+  display: flex;
+}
+.mediaSvg {
+  width: 16px;
+  height: 16px;
+  display: block;
+  fill: #fff;
+}
+.linkSvg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--accent-color2);
+  display: block;
+  padding: 8px;
+}
+.mediaItem {
+  &:not(:last-child) {
+    margin-right: 25px;
   }
-  to {
-    background-color: #fea5bb;
-  }
 }
-/* Стилі для екранів з шириною менше 600px */
-@media (max-width: 600px) {
-.social-media {
-  justify-content: center;
-  flex-wrap: wrap;
+.mediaDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
-
-.social-media li {
-  margin: 5px;
+.textTel {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 186%;
+  letter-spacing: 0%;
 }
-
-.social-media a {
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-}
-
-.top, .bottom {
-  text-align: center;
-}
+.linkTel {
+  color: var(--accent-color1);
+  text-decoration: none;
 }
