@@ -14,6 +14,22 @@
   @media screen and (min-width: 760px) {
     padding-top: 46px;
     padding-bottom: 0px;
+    background-image: url(/assets/img/tablet/1x/hero/big-IceCream-tab-1x.webp);
+    background-position: 65%;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/assets/img/tablet/2x/hero/big-IceCream-tab-2x.webp);
+    }
+  }
+  @media screen and (min-width: 1110px) {
+    background-image: url(/assets/img/desktop/1x/hero/big-IceCream-comp-1x.webp);
+    background-position: 60%;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/assets/img/desktop/2x/hero/big-IceCream-comp-2x.webp);
+    }
   }
 }
 .block-content {
@@ -36,11 +52,19 @@
     font-size: 32px;
     margin-bottom: 25px;
   }
+  @media screen and (min-width: 1110px) {
+    width: 277px;
+    height: 137px;
+    font-size: 38px;
+  }
 }
 .hero-span {
   text-transform: uppercase;
   font-size: 48px;
   color: var(--accent-color1);
+  @media screen and (min-width: 1110px) {
+    font-size: 58px;
+  }
 }
 .hero-buttons {
   margin-bottom: 30px;
@@ -60,11 +84,20 @@
     @media screen and (min-width: 760px) {
       font-size: 11px;
     }
+    @media screen and (min-width: 1110px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
   @media screen and (min-width: 760px) {
     width: 81px;
     height: 28px;
     margin-right: 10px;
+  }
+  @media screen and (min-width: 1110px) {
+    width: 102px;
+    height: 40px;
+    margin-right: 15px;
   }
 }
 .hero-button-made {
@@ -81,10 +114,18 @@
     @media screen and (min-width: 760px) {
       font-size: 11px;
     }
+    @media screen and (min-width: 1110px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
   @media screen and (min-width: 760px) {
     width: 100px;
     height: 28px;
+  }
+  @media screen and (min-width: 1110px) {
+    width: 138px;
+    height: 40px;
   }
 }
 .block-text {
@@ -93,6 +134,15 @@
     display: flex;
     align-items: center;
     margin-bottom: 34px;
+  }
+  @media screen and (min-width: 1110px) {
+    margin-bottom: 56px;
+  }
+}
+.img-milk {
+  @media screen and (min-width: 1110px) {
+    width: 188px;
+    height: 191px;
   }
 }
 .block-hero-inform {
@@ -106,6 +156,13 @@
   line-height: 150%;
   color: var(--general-color);
   margin-bottom: 7px;
+  @media screen and (min-width: 1110px) {
+    width: 200px;
+    height: 78px;
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 20px;
+  }
 }
 .text-button {
   width: 18px;
@@ -113,12 +170,21 @@
   border-radius: 50%;
   cursor: pointer;
   background-color: var(--general-color);
+  @media screen and (min-width: 1110px) {
+    width: 26px;
+    height: 26px;
+  }
 }
 .svg-hero-right {
   width: 9px;
   height: 9px;
   margin-bottom: 1px;
   fill: var(--accent-color1);
+  @media screen and (min-width: 1110px) {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 0;
+  }
 }
 .block-number {
   display: none;
@@ -131,11 +197,16 @@
   margin-bottom: 125px;
 }
 .item-number {
+  display: flex;
+  justify-content: flex-end;
   &:not(:last-child) {
     margin-bottom: 13px;
   }
   & > div {
-    margin-left: 135px;
+    width: 43px;
+    @media screen and (min-width: 1110px) {
+      width: 92px;
+    }
   }
 }
 .title-number {
@@ -154,6 +225,18 @@
     border-radius: 50%;
     margin-left: 24.5px;
     margin-bottom: -15px;
+    @media screen and (min-width: 1110px) {
+      width: 30px;
+      height: 30px;
+      margin-left: 39px;
+      margin-bottom: -26px;
+    }
+  }
+  @media screen and (min-width: 1110px) {
+    width: 59px;
+    height: 53px;
+    font-size: 46px;
+    line-height: 53px;
   }
 }
 .text-number {
@@ -164,8 +247,19 @@
   font-weight: 400;
   line-height: 10px;
   text-align: center;
+  @media screen and (min-width: 1110px) {
+    width: 74px;
+    height: 18px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
 }
 
 .img-girl {
-  margin-bottom: -3px;
+  margin-bottom: -2px;
+  @media screen and (min-width: 1110px) {
+    width: 293px;
+    height: 232px;
+  }
 }
