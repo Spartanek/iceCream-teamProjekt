@@ -283,7 +283,6 @@
   border: 1px solid #e1e1e1;
   border-radius: 24px;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
-  margin-bottom: 21px;
 }
 
 .sec2_comments {
@@ -291,7 +290,6 @@
   border: 1px solid #e1e1e1;
   border-radius: 24px;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
-  margin-bottom: 21px;
 }
 
 .sec3_comments {
@@ -299,14 +297,15 @@
   border: 1px solid #e1e1e1;
   border-radius: 24px;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
-  margin-bottom: 21px;
 }
-
 .comments_list {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 760px) {
+    flex-direction: row;
+  }
 }
 .button-comment {
   width: 160px;
@@ -328,6 +327,17 @@
 }
 .button-comment.white-button {
   background: rgb(255, 255, 255);
+  &:hover,
+  :active,
+  :focus {
+    background: rgb(212, 20, 67);
+    & > .text-button-comment {
+      color: rgb(255, 255, 255);
+    }
+    & > .fa-solid.fa-angle-right {
+      color: rgb(255, 255, 255);
+    }
+  }
 }
 .text-button-comment {
   color: rgb(255, 255, 255);
@@ -352,14 +362,41 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  @media screen and (min-width: 760px) {
+    width: 190px;
+  }
 }
 .button-comment-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 55px;
+  @media screen and (min-width: 760px) {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+  }
 }
 .button-comment-item {
   &:not(:last-child) {
     margin-bottom: 10px;
+  }
+  // запис функціонує, але занадто великий
+  @media screen and (min-width: 760px) {
+    &:not(:last-child) {
+      margin-bottom: 0px;
+      margin-right: 15px;
+    }
+  }
+}
+.commentGeneral-item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 760px) {
+    &:not(:last-child) {
+      margin-bottom: 0px;
+      margin-right: 20px;
+    }
   }
 }
