@@ -33,9 +33,6 @@
 }
 
 .mainh3_p1 {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #e1e1e1;
-
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -44,7 +41,6 @@
   /* or 150% */
 
   color: #907e82;
-  margin-bottom: 25px;
 }
 
 .mainh3_p2 {
@@ -122,9 +118,6 @@
 }
 
 .secondh3_p1 {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #e1e1e1;
-
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -133,7 +126,6 @@
   /* or 150% */
 
   color: #907e82;
-  margin-bottom: 25px;
 }
 
 .secondh3_p2 {
@@ -214,10 +206,6 @@
 }
 
 .thirdh3_p1 {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #e1e1e1;
-  margin-bottom: 25px;
-
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -376,6 +364,9 @@
     justify-content: center;
     margin-top: 80px;
   }
+  @media screen and (min-width: 1100px) {
+    margin-top: 85px;
+  }
 }
 .button-comment-item {
   &:not(:last-child) {
@@ -390,6 +381,7 @@
   }
 }
 .commentGeneral-item {
+  width: 220px;
   &:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -398,5 +390,94 @@
       margin-bottom: 0px;
       margin-right: 20px;
     }
+  }
+  @media screen and (min-width: 1100px) {
+    width: 330px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+// @media screen and (min-width: 760px){}
+// @media screen and (min-width: 1100px){}
+.cafeshka-h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 760px) {
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 4%;
+
+    width: 75px;
+    height: 30px;
+  }
+  @media screen and (min-width: 1100px) {
+    margin-bottom: 35px;
+  }
+}
+.foodTruck-h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 760px) {
+    margin-bottom: 30px;
+    width: 140px;
+    color: rgb(255, 255, 255);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 4%;
+
+    height: 30px;
+  }
+  @media screen and (min-width: 1100px) {
+    margin-bottom: 35px;
+  }
+}
+.cityGeneral-text {
+  @media screen and (min-width: 760px) {
+    color: rgb(0, 0, 0);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 4%;
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1110px) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+.loremGeneral-text {
+  &::after {
+    content: '';
+    display: block;
+    width: 180px;
+    color: rgb(225, 225, 225);
+  }
+  @media screen and (min-width: 760px) {
+    color: rgb(144, 126, 130);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 166%;
+    letter-spacing: 0%;
+    width: 145px;
+  }
+  @media screen and (min-width: 1110px) {
+    color: rgb(144, 126, 130);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 183%;
+    letter-spacing: 4%;
+    width: 245px;
   }
 }
