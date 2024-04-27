@@ -1141,6 +1141,7 @@ a {
   background: linear-gradient(0deg, rgba(255, 245, 246, 0.8), rgb(255, 255, 255) 82%);
   padding-bottom: 115px;
   padding-top: 85px;
+  background-image: url("../../../assets/img/desktop/1x/");
 }
 
 .sec1_comments {
