@@ -977,11 +977,16 @@ a {
 }
 @media screen and (min-width: 760px) {
   .mainh3_contacts {
-    color: rgb(144, 126, 130);
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
     line-height: 183%;
     letter-spacing: 0%;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .mainh3_contacts {
+    display: block;
+    font-size: 16px;
   }
 }
 
@@ -1039,6 +1044,15 @@ a {
 @media screen and (min-width: 760px) {
   .secondh3_p2 {
     letter-spacing: 0%;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .secondh3_p2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 4%;
   }
 }
 
@@ -1049,6 +1063,17 @@ a {
   font-size: 12px;
   line-height: 186%;
   color: #ffa5ba;
+}
+@media screen and (min-width: 760px) {
+  .secondh3_p3 {
+    font-size: 14px;
+    letter-spacing: 0%;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .secondh3_p3 {
+    font-size: 16px;
+  }
 }
 
 .secondh3_contacts {
@@ -1141,7 +1166,20 @@ a {
   background: linear-gradient(0deg, rgba(255, 245, 246, 0.8), rgb(255, 255, 255) 82%);
   padding-bottom: 115px;
   padding-top: 85px;
-  background-image: url("../../../assets/img/desktop/1x/");
+}
+@media screen and (min-width: 1110px) {
+  .mainsection_comments {
+    background-image: url("../../assets/img/desktop/1x/comments/background-comment-1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+@media screen and (min-width: 1110px) and (min-device-pixel-ratio: 2), screen and (min-width: 1110px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1110px) and (min-resolution: 192dpi), screen and (min-width: 1110px) and (min-resolution: 2dppx) {
+  .mainsection_comments {
+    background-image: url("../../assets/img/desktop/2x/comments/background-comment-2x.png");
+    background-size: contain;
+  }
 }
 
 .sec1_comments {
@@ -1181,7 +1219,10 @@ a {
   width: 160px;
   height: 45px;
   border-radius: 22px;
-  background: rgb(212, 19, 66);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgb(212, 19, 66);
 }
 .button-comment:hover,
 .button-comment :active,
@@ -1200,7 +1241,10 @@ a {
 }
 
 .button-comment.white-button {
-  background: rgb(255, 255, 255);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgb(255, 255, 255);
 }
 .button-comment.white-button:hover,
 .button-comment.white-button :active,
@@ -1372,6 +1416,13 @@ a {
   width: 180px;
   margin-bottom: 25px;
 }
+.loremGeneral-text::after {
+  content: "";
+  display: block;
+  margin: 25px 0;
+  width: 180px;
+  background: red;
+}
 @media screen and (min-width: 760px) {
   .loremGeneral-text {
     color: rgb(144, 126, 130);
@@ -1409,12 +1460,24 @@ a {
 @media screen and (min-width: 760px) {
   .inner-separator {
     width: 180px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .inner-separator {
+    width: 235px;
   }
 }
 
 .p3_separator {
   display: block;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 760px) {
+  .p3_separator {
+    margin-bottom: 15px;
+  }
 }
 
 .content {
