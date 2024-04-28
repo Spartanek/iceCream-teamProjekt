@@ -158,6 +158,7 @@ a {
   --color-blackvariation2: #0000001a;
   --color-greyvariaton1: #666666;
   --color-greyvariaton2: #907e82;
+  --background-hero: #ffb8ca;
 }
 
 .visually-hidden {
@@ -193,7 +194,7 @@ a {
 }
 @media screen and (min-width: 1110px) {
   .container {
-    width: 1300px;
+    width: 1100px;
   }
 }
 
@@ -720,10 +721,8 @@ a {
 .section-process {
   /* Rectangle 14 */
   position: relative;
-  width: 320px;
-  height: 1688px;
-  left: 0;
-  right: 0;
+  padding-top: 98px;
+  padding-bottom: 97px;
   background: rgb(255, 245, 246);
 }
 .section-process .h3 {
@@ -735,6 +734,13 @@ a {
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .section-process .h3 {
+    width: 285px;
+    font-size: 26px;
+    line-height: 30px;
+  }
 }
 .section-process .h2 {
   color: rgb(212, 20, 67);
@@ -752,7 +758,13 @@ a {
   width: 200px;
   height: 112px;
   margin: 0 auto;
-  margin-top: 125px;
+  margin-bottom: 26px;
+}
+@media (min-width: 768px) {
+  .section-process .process-heading {
+    width: 429px;
+    margin: 0 auto;
+  }
 }
 .section-process .process-heading .h2 {
   position: absolute;
@@ -762,10 +774,47 @@ a {
   margin: 0;
   bottom: 0;
 }
+@media (min-width: 768px) {
+  .section-process .process-heading .h2 {
+    width: 429px;
+    margin: 0 auto;
+    color: rgb(212, 20, 67);
+    font-family: Titan One;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
 .section-process .process-heading .h3 {
   position: absolute;
   top: 0;
   margin: 0;
+}
+@media (min-width: 768px) {
+  .section-process .process-heading .h3 {
+    width: 429px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .section-process .process-flex {
+    display: flex;
+    justify-content: center;
+  }
+}
+.section-process .div-home-pic4 {
+  display: block;
+  margin-right: 20px;
+  background: url(../../assets/img/mobile/1x/process/cow-mob-1x.webp);
+}
+@media (min-width: 768px) {
+  .section-process .div-home-pic4 {
+    display: flex;
+    background: url(../../assets/img/tablet/1x/process/cow-tab-1x.webp);
+  }
 }
 .section-process .bg-home-pic4 {
   /* home-pic4 1 */
@@ -774,11 +823,11 @@ a {
   width: 280px;
   height: 279px;
   margin: 0 auto;
-  margin-top: 26px;
+  top: 26px;
   background-size: cover;
 }
 .section-process .text-1 {
-  display: block;
+  display: flex;
   width: 220px;
   height: 79px;
   color: rgb(0, 0, 0);
@@ -807,11 +856,9 @@ a {
 }
 .section-process .bg-image {
   display: block;
-  position: absolute;
   width: 320px;
   height: 133px;
-  background-image: url(../../../assets/img/mobile/1x/process/milk-spot-mob-1x.webp);
-  top: 766px;
+  background-image: url(../../assets/img/mobile/1x/process/milk-spot-mob-1x.webp);
 }
 .section-process .button-rectangle-1 {
   display: block;
