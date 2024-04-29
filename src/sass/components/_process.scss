@@ -191,11 +191,11 @@ $text-color-black: rgb(0, 0, 0);
   }
   .bg-image {
     display: block;
-    // position: absolute;
+    position: absolute;
     width: 320px;
     height: 133px;
     background-image: url(../../assets/img/mobile/1x/process/milk-spot-mob-1x.webp);
-    // top: 766px;
+    top: 0;
   }
   .button-rectangle-1 {
     display: block;
@@ -319,7 +319,7 @@ $text-color-black: rgb(0, 0, 0);
         display: block;
         width: 33px;
         height: 50px;
-        background-image: url(../../assets/img/mobile/1x/process/item-process1-mob-1x.webp);
+        background-image: url(../../assets/img/mobile/1x/process/1item-process-mob-1x.webp);
       }
     }
 
@@ -330,7 +330,7 @@ $text-color-black: rgb(0, 0, 0);
         display: block;
         width: 50px;
         height: 50px;
-        background-image: url(../../assets/img/tablet/1x/process/item-process2-tab-1x.webp);
+        background-image: url(../../assets/img/mobile/1x/process/2item-process-mob-1x.webp);
       }
     }
     &#three {
@@ -340,7 +340,7 @@ $text-color-black: rgb(0, 0, 0);
         display: block;
         width: 44px;
         height: 50px;
-        background-image: url(../../assets/img/mobile/1x/process/item-process3-mob-1x.webp);
+        background-image: url(../../assets/img/mobile/1x/process/3item-process-mob-1x.webp);
       }
     }
   }
