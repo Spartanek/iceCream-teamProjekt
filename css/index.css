@@ -199,10 +199,8 @@ a {
 .section-process {
   /* Rectangle 14 */
   position: relative;
-  width: 320px;
-  height: 1688px;
-  left: 0;
-  right: 0;
+  padding-top: 98px;
+  padding-bottom: 97px;
   background: rgb(255, 245, 246);
 }
 .section-process .h3 {
@@ -214,6 +212,13 @@ a {
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .section-process .h3 {
+    width: 285px;
+    font-size: 26px;
+    line-height: 30px;
+  }
 }
 .section-process .h2 {
   color: rgb(212, 20, 67);
@@ -231,7 +236,13 @@ a {
   width: 200px;
   height: 112px;
   margin: 0 auto;
-  margin-top: 125px;
+  margin-bottom: 26px;
+}
+@media (min-width: 768px) {
+  .section-process .process-heading {
+    width: 429px;
+    margin: 0 auto;
+  }
 }
 .section-process .process-heading .h2 {
   position: absolute;
@@ -241,23 +252,55 @@ a {
   margin: 0;
   bottom: 0;
 }
+@media (min-width: 768px) {
+  .section-process .process-heading .h2 {
+    width: 429px;
+    margin: 0 auto;
+    color: rgb(212, 20, 67);
+    font-family: Titan One;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
 .section-process .process-heading .h3 {
   position: absolute;
   top: 0;
   margin: 0;
 }
-.section-process .bg-home-pic4 {
-  /* home-pic4 1 */
+@media (min-width: 768px) {
+  .section-process .process-heading .h3 {
+    width: 429px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .section-process .process-flex {
+    display: flex;
+    justify-content: center;
+  }
+}
+.section-process .div-home-pic4 {
   display: block;
-  position: relative;
   width: 280px;
   height: 279px;
-  margin: 0 auto;
-  margin-top: 26px;
-  background-size: cover;
+  background: url(../../assets/img/mobile/1x/process/cow-mob-1x.webp);
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .section-process .div-home-pic4 {
+    display: flex;
+    background: url(../../assets/img/tablet/1x/process/cow-tab-1x.webp);
+    width: 340px;
+    height: 339px;
+    margin-right: 20px;
+  }
 }
 .section-process .text-1 {
-  display: block;
+  display: flex;
   width: 220px;
   height: 79px;
   color: rgb(0, 0, 0);
@@ -269,6 +312,14 @@ a {
   text-align: left;
   margin: 0 auto;
   margin-top: 46px;
+}
+@media (min-width: 768px) {
+  .section-process .text-1 {
+    width: 340px;
+    font-size: 14px;
+    line-height: 176%;
+    text-align: left;
+  }
 }
 .section-process .text-2 {
   position: relative;
@@ -284,13 +335,13 @@ a {
   margin: 0 auto;
   margin-top: 47px;
 }
-.section-process .bg-image {
-  display: block;
-  position: absolute;
-  width: 320px;
-  height: 133px;
-  background-image: url(../../assets/img/mobile/2x/process/milk-spot.webp);
-  top: 766px;
+@media (min-width: 768px) {
+  .section-process .text-2 {
+    width: 340px;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 4%;
+  }
 }
 .section-process .button-rectangle-1 {
   display: block;
@@ -302,6 +353,11 @@ a {
   background: rgb(255, 255, 255);
   margin: 0 auto;
   margin-top: 47px;
+}
+@media (min-width: 768px) {
+  .section-process .button-rectangle-1 {
+    margin-left: 0;
+  }
 }
 .section-process .button-rectangle-1 .button-group {
   /* Group 2 */
@@ -347,11 +403,14 @@ a {
   height: 156px;
   margin: 0 auto;
 }
+@media (min-width: 768px) {
+  .section-process .desc-group {
+    width: 180px;
+    height: 226px;
+    bottom: auto;
+  }
+}
 .section-process .desc-group.desc-group > .desc-group-h2 {
-  width: 98px;
-  height: 56px;
-  margin: 0;
-  margin-top: 16px;
   color: rgb(212, 20, 67);
   font-family: "Titan One", sans-serif;
   font-size: 36px;
@@ -360,6 +419,20 @@ a {
   letter-spacing: 4%;
   text-align: left;
   text-transform: uppercase;
+  width: 98px;
+  height: 56px;
+  margin: 0;
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .section-process .desc-group.desc-group > .desc-group-h2 {
+    width: 98px;
+    height: 56px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: 4%;
+  }
 }
 .section-process .desc-group.desc-group > .desc-group-text {
   color: rgb(0, 0, 0);
@@ -374,6 +447,18 @@ a {
   position: absolute;
   margin: 0;
   bottom: 0;
+}
+@media (min-width: 768px) {
+  .section-process .desc-group.desc-group > .desc-group-text {
+    width: 180px;
+    height: 71px;
+    bottom: auto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 174%;
+    letter-spacing: 0%;
+    margin-top: 38px;
+  }
 }
 .section-process .desc-group#one {
   margin-top: 39px;
@@ -401,4 +486,20 @@ a {
   width: 44px;
   height: 50px;
   background-image: url(../../assets/img/mobile/1x/process/3item-process-mob-1x.webp);
+}
+@media (min-width: 768px) {
+  .section-process .desc-main {
+    margin-top: 66px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.section-process .bg-image {
+  display: flex;
+  position: absolute;
+  width: 320px;
+  height: 133px;
+  background-image: url(../../assets/img/mobile/1x/process/milk-spot-mob-1x.webp);
+  top: 0;
+  left: 33%;
 }
