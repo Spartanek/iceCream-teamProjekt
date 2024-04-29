@@ -189,14 +189,7 @@ $text-color-black: rgb(0, 0, 0);
       letter-spacing: 4%;
     }
   }
-  .bg-image {
-    display: block;
-    position: absolute;
-    width: 320px;
-    height: 133px;
-    background-image: url(../../assets/img/mobile/1x/process/milk-spot-mob-1x.webp);
-    top: 0;
-  }
+
   .button-rectangle-1 {
     display: block;
 
@@ -350,5 +343,13 @@ $text-color-black: rgb(0, 0, 0);
       display: flex;
       justify-content: center;
     }
+  }
+  .bg-image {
+    display: flex;
+    position: absolute;
+    width: 320px;
+    height: 133px;
+    background-image: url(../../assets/img/mobile/1x/process/milk-spot-mob-1x.webp);
+    top: 0;
   }
 }
