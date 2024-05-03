@@ -1169,15 +1169,15 @@ a {
 }
 @media screen and (min-width: 1110px) {
   .mainsection_comments {
-    background-image: url("../../assets/img/desktop/1x/comments/background-comment-1x.png");
+    background-image: url("../../assets/img/desktop/1x/comments/section-comment-1x.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 30% 25%;
     background-size: contain;
   }
 }
 @media screen and (min-width: 1110px) and (min-device-pixel-ratio: 2), screen and (min-width: 1110px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1110px) and (min-resolution: 192dpi), screen and (min-width: 1110px) and (min-resolution: 2dppx) {
   .mainsection_comments {
-    background-image: url("../../assets/img/desktop/2x/comments/background-comment-2x.png");
+    background-image: url("../../assets/img/desktop/2x/comments/section-comment-2x.png");
     background-size: contain;
   }
 }
