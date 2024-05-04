@@ -40,12 +40,14 @@ footer {
 }
 .text-icons {
   display: flex;
+  justify-content: space-between;
 }
 .mediaList {
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: center;
+  margin-bottom: 44px;
+  justify-content: end;
 }
 .mediaDiv {
   justify-content: flex-end; /* Align icons to the right */
@@ -56,8 +58,6 @@ footer {
 }
 .linkSvg {
   display: block;
-  width: 32px;
-  height: 32px;
   border-radius: 50%;
   background-color: var(--accent-color2);
   display: block;
@@ -72,10 +72,27 @@ footer {
   margin: 0; /* Remove default margins */
   font-weight: 700;
   line-height: 186%;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 186%;
+  /* identical to box height, or 30px */
+  letter-spacing: 0.02em;
+
+  color: #000000;
 }
 .linkTel {
   color: var(--accent-color1);
   text-decoration: none;
+}
+.mediaItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .copyright {
   font-size: 14px;
@@ -102,6 +119,9 @@ footer {
   .footerHeading-span {
     font-size: 34px;
     letter-spacing: 1.36px;
+  }
+  .text-icons {
+    display: block;
   }
   .mediaSvg {
     width: 16px;
@@ -148,6 +168,7 @@ footer {
   }
   .footer-heading {
     font-size: 30px;
+    margin-bottom: 15px;
     letter-spacing: 1.2px;
   }
   .footerHeading-span {
