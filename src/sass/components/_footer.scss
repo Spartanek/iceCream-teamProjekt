@@ -4,13 +4,11 @@ footer {
   color: #907e82;
   text-align: center;
 }
-.container {
-  display: flex;
+.footer-container {
   justify-content: space-between;
   align-items: center;
 }
 .footer-content {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -40,7 +38,9 @@ footer {
   text-align: left;
   display: block;
 }
-
+.text-icons {
+  display: flex;
+}
 .mediaList {
   list-style: none;
   padding: 0;
@@ -48,7 +48,6 @@ footer {
   justify-content: center;
 }
 .mediaDiv {
-  display: flex;
   justify-content: flex-end; /* Align icons to the right */
 }
 .contact-section {

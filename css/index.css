@@ -907,14 +907,12 @@ footer {
   text-align: center;
 }
 
-.container {
-  display: flex;
+.footer-container {
   justify-content: space-between;
   align-items: center;
 }
 
 .footer-content {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -948,6 +946,10 @@ footer {
   display: block;
 }
 
+.text-icons {
+  display: flex;
+}
+
 .mediaList {
   list-style: none;
   padding: 0;
@@ -956,7 +958,6 @@ footer {
 }
 
 .mediaDiv {
-  display: flex;
   justify-content: flex-end; /* Align icons to the right */
 }
 
