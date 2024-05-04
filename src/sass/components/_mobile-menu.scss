@@ -10,7 +10,7 @@
   z-index: 1;
   background: var(--mobile-menu-background);
   transform: translate(0);
-  transition: transform 350ms cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition: transform 550ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 .mob-menu__button--open {
   width: 30px;
