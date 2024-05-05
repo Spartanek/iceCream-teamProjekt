@@ -266,6 +266,7 @@
 
 .mainsection_comments {
   background: rgb(255, 165, 186);
+  position: relative;
   background: linear-gradient(
     0deg,
     rgba(255, 245, 246, 80%),
@@ -276,7 +277,7 @@
   @media screen and (min-width: 1110px) {
     background-image: url('../../assets/img/desktop/1x/comments/section-comment-1x.png');
     background-repeat: no-repeat;
-    background-position: 30% 25%;
+    background-position: 7% 25%;
     background-size: contain;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
