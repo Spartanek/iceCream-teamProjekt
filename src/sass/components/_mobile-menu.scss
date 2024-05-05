@@ -2,11 +2,11 @@
   position: fixed;
   top: 0;
   right: 0;
-  
+
   width: 250px;
   height: 100vh;
 
-  padding: 27px 20px 0px 20px;
+  padding-top: 23px;
   z-index: 1;
   background: var(--mobile-menu-background);
   transform: translate(0);
@@ -32,7 +32,7 @@
 }
 .mob-menu__button--close {
   display: block;
-  margin-left: 185px;
+  margin-left: 205px;
   margin-bottom: 23px;
   background-color: transparent;
   border-radius: 50%;
@@ -48,10 +48,14 @@
   border-radius: 22px;
   cursor: pointer;
   background: var(--general-color);
-  margin-bottom: 20px;
   @media screen and (min-width: 760px) {
     width: 186px;
   }
+}
+.block-button-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 .button-mobile-menu-text {
   width: 80px;
@@ -71,6 +75,7 @@
   font-weight: 700;
   line-height: 28px;
   color: var(--general-color);
+  margin-left: 21px;
   &:hover {
     color: rgb(212, 20, 67);
   }
