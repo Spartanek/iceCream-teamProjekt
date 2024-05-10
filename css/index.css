@@ -1752,11 +1752,6 @@ a {
   margin-right: 10px;
 }
 
-.sec1_comments {
-  width: 220px;
-  padding: 43px 20px;
-}
-
 .mainh3_comments {
   background-color: var(--product-iceCream2);
   color: var(--general-color);
@@ -1838,11 +1833,6 @@ a {
     display: block;
     font-size: 16px;
   }
-}
-
-.sec2_comments {
-  width: 220px;
-  padding: 43px 20px;
 }
 
 .secondh3_title {
@@ -1935,11 +1925,6 @@ a {
   /* or 150% */
   color: var(--color-greyvariaton2);
   text-decoration: none;
-}
-
-.sec3_comments {
-  width: 220px;
-  padding: 43px 44px;
 }
 
 .thirdh3_title {
@@ -2177,11 +2162,15 @@ a {
 
 .commentGeneral-item {
   width: 220px;
+  padding: 43px 20px;
 }
 .commentGeneral-item:not(:last-child) {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 760px) {
+  .commentGeneral-item {
+    padding: 50px 30px;
+  }
   .commentGeneral-item:not(:last-child) {
     margin-bottom: 0px;
     margin-right: 20px;
@@ -2190,6 +2179,7 @@ a {
 @media screen and (min-width: 1100px) {
   .commentGeneral-item {
     width: 330px;
+    padding: 60px 40px;
   }
   .commentGeneral-item:not(:last-child) {
     margin-right: 30px;
