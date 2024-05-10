@@ -2362,6 +2362,21 @@ footer {
   padding-bottom: 25px;
   background: rgb(255, 245, 246);
 }
+@media screen and (min-width: 760px) {
+  footer {
+    padding-top: 165px;
+  }
+}
+
+.upper-footer-container {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 760px) {
+  .upper-footer-container {
+    display: flex;
+    margin-bottom: 0px;
+  }
+}
 
 .footer-subtitle {
   color: rgb(255, 165, 186);
@@ -2375,6 +2390,15 @@ footer {
   width: 230px;
   margin-bottom: 15px;
 }
+@media screen and (min-width: 760px) {
+  .footer-subtitle {
+    width: 340px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    font-size: 26px;
+    letter-spacing: 4%;
+  }
+}
 
 .footer-title {
   color: rgb(212, 20, 67);
@@ -2387,9 +2411,22 @@ footer {
   text-align: left;
   text-transform: uppercase;
 }
+@media screen and (min-width: 760px) {
+  .footer-title {
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 6%;
+  }
+}
 
 .footer-title-div {
   margin-bottom: 40px;
+}
+@media screen and (min-width: 760px) {
+  .footer-title-div {
+    margin-right: 50px;
+    margin-bottom: 90px;
+  }
 }
 
 .social-media-ul {
@@ -2411,14 +2448,39 @@ footer {
   height: 32px;
   border-radius: 50%;
 }
+@media screen and (min-width: 760px) {
+  .social-media-div {
+    width: 35px;
+    height: 35px;
+  }
+}
 
 .footer-svg {
   fill: var(--general-color);
-  height: 17px;
 }
 
 .social-media-item:not(:last-child) {
   margin-right: 20px;
+}
+@media screen and (min-width: 760px) {
+  .social-media-item:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.svg-footer-git {
+  width: 18px;
+  height: 18px;
+}
+
+.svg-footer-telegram {
+  height: 15px;
+  width: 20px;
+}
+
+.svg-footer-facebook {
+  width: 15px;
+  height: 20px;
 }
 
 .telephone-footer-text {
@@ -2429,17 +2491,42 @@ footer {
   letter-spacing: 0%;
   text-align: right;
 }
+@media screen and (min-width: 760px) {
+  .telephone-footer-text {
+    width: 300px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 186%;
+    letter-spacing: 2%;
+  }
+}
 
 .telephone-link {
   color: var(--accent-color1);
 }
 
-.telephone-footer-div {
-  margin-bottom: 40px;
+.text-footer-after {
+  color: rgb(144, 126, 130);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 152%;
+  letter-spacing: 0%;
 }
 
-.footer-separator {
+.footer-after {
+  display: block;
   width: 100%;
+}
+.footer-after::before {
+  content: "";
+  display: block;
   height: 1px;
-  background-color: rgb(225, 225, 225);
+  background-color: var(--color);
+  margin-bottom: 20px;
+}
+
+.margin-footer-div {
+  display: flex;
+  justify-content: center;
 }
