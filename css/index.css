@@ -792,7 +792,7 @@ a {
 
 .modal-command {
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .modal-command::after {
   content: "";
@@ -862,8 +862,9 @@ a {
 }
 @media screen and (min-width: 760px) {
   .block-list-command {
-    margin: 0 auto;
     width: 520px;
+    display: flex;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1110px) {
@@ -876,15 +877,15 @@ a {
   .list-command {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 22px 10px;
-    margin-bottom: 170px;
+    gap: 22px 15px;
+    margin-bottom: 130px;
   }
 }
 @media screen and (min-width: 1110px) {
   .list-command {
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 30px;
-    margin-bottom: 170px;
+    row-gap: 40px;
+    margin-bottom: 120px;
   }
 }
 
@@ -893,7 +894,7 @@ a {
   justify-content: center;
 }
 .item-command:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 760px) {
   .item-command:not(:last-child) {
@@ -913,7 +914,9 @@ a {
 .command-img {
   width: 35px;
   height: 35px;
-  margin: 8px 8px 0px 0px;
+  margin-top: 8px;
+  margin-right: 10px;
+  border-radius: 50%;
 }
 
 .command-name {
@@ -921,6 +924,7 @@ a {
   font-size: 14px;
   font-weight: 700;
   line-height: 17px;
+  margin-bottom: 5px;
   margin-left: -50%;
   color: var(--color-blackvariation1);
 }
