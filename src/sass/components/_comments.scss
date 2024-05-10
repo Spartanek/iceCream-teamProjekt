@@ -1,14 +1,15 @@
+$border-obvodocka: #e1e1e1;
 .sec1_comments {
   width: 220px;
   padding: 43px 20px;
 }
 
 .mainh3_comments {
-  background-color: #f0d1a5;
-  color: white;
+  background-color: var(--product-iceCream2);
+  color: var(--general-color);
   text-align: center;
   width: 80px;
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -21,7 +22,7 @@
 
 .mainh3_chicago {
   margin-bottom: 10px;
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -29,44 +30,44 @@
   /* or 22px */
   letter-spacing: 0.04em;
 
-  color: #000000;
+  color: var(--special-color);
 }
 
 .mainh3_p1 {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   /* or 150% */
 
-  color: #907e82;
+  color: var(--color-greyvariaton1);
 }
 
 .mainh3_p2 {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
   /* or 22px */
 
-  color: #000000;
+  color: var(--special-color);
 }
 
 .mainh3_p3 {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
   /* identical to box height, or 22px */
 
-  color: #ffa5ba;
+  color: var(--accent-color2);
 }
 
 .mainh3_contacts {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -95,10 +96,10 @@
 }
 
 .secondh3_title {
-  background-color: #c2e297;
-  color: #ffffff;
+  background-color: var(--product-iceCream3);
+  color: var(--general-color);
   width: 130px;
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -110,7 +111,7 @@
 }
 
 .secondh3_Losangeles {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -118,30 +119,30 @@
   /* or 22px */
   letter-spacing: 0.04em;
 
-  color: #000000;
+  color: var(--special-color);
   margin-bottom: 10px;
 }
 
 .secondh3_p1 {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   /* or 150% */
 
-  color: #907e82;
+  color: var(--color-greyvariaton2);
 }
 
 .secondh3_p2 {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
   /* or 22px */
 
-  color: #000000;
+  color: var(--special-color);
   @media screen and (min-width: 760px) {
     letter-spacing: 0%;
     font-size: 14px;
@@ -155,12 +156,12 @@
 }
 
 .secondh3_p3 {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
-  color: #ffa5ba;
+  color: var(--accent-color2);
   @media screen and (min-width: 760px) {
     font-size: 14px;
 
@@ -172,14 +173,14 @@
 }
 
 .secondh3_contacts {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   /* or 150% */
 
-  color: #907e82;
+  color: var(--color-greyvariaton2);
 
   text-decoration: none;
 }
@@ -192,9 +193,9 @@
 .thirdh3_title {
   width: 80px;
   margin-bottom: 25px;
-  background-color: #f0d1a5;
-  color: white;
-  font-family: 'DM Sans';
+  background-color: var(--product-iceCream2);
+  color: var(--general-color);
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -202,14 +203,12 @@
   /* or 22px */
   text-align: center;
   letter-spacing: 0.04em;
-
-  color: #ffffff;
 }
 
 .thirdh3_Newyork {
   margin-bottom: 10px;
 
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -217,55 +216,55 @@
   /* or 22px */
   letter-spacing: 0.04em;
 
-  color: #000000;
+  color: var(--special-color);
 }
 
 .thirdh3_p1 {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   /* or 150% */
 
-  color: #907e82;
+  color: var(--color-greyvariaton2);
 }
 
 .thirdh3_p2 {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
   /* or 22px */
 
-  color: #000000;
+  color: var(--special-color);
 }
 
 .thirdh3_p3 {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
   /* identical to box height, or 22px */
 
-  color: #ffa5ba;
+  color: var(--accent-color2);
 }
 .thirdh3_contacts {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   /* or 150% */
 
-  color: #907e82;
+  color: var(--color-greyvariaton2);
   text-decoration: none;
 }
 
 .mainsection_comments {
-  background: rgb(255, 165, 186);
+  background: var(--accent-color2);
   position: relative;
   background: linear-gradient(
     0deg,
@@ -289,24 +288,24 @@
 }
 
 .sec1_comments {
-  background-color: white;
-  border: 1px solid #e1e1e1;
+  background-color: var(--general-color);
+  border: 1px solid $border-obvodocka;
   border-radius: 24px;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
 }
 
 .sec2_comments {
-  background-color: white;
-  border: 1px solid #e1e1e1;
+  background-color: var(--general-color);
+  border: 1px solid $border-obvodocka;
   border-radius: 24px;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
 }
 
 .sec3_comments {
-  background-color: white;
-  border: 1px solid #e1e1e1;
+  background-color: var(--general-color);
+  border: 1px solid $border-obvodocka;
   border-radius: 24px;
-  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  box-shadow: 0px 8px 30px 0px var(--color-blackvariation2);
 }
 .comments_list {
   display: flex;
@@ -324,16 +323,16 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: rgb(212, 19, 66);
+  background-color: var(--accent-color1);
   &:hover,
   :active,
   :focus {
     background: rgb(255, 255, 255);
     & > .text-button-comment {
-      color: rgb(212, 20, 67);
+      color: var(--accent-color1);
     }
     & > .fa-solid.fa-angle-right {
-      color: rgb(212, 20, 67);
+      color: var(--accent-color1);
     }
   }
 }
@@ -341,21 +340,21 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: rgb(255, 255, 255);
+  background-color: var(--general-color);
   &:hover,
   :active,
   :focus {
-    background: rgb(212, 20, 67);
+    background: var(--accent-color1);
     & > .text-button-comment {
-      color: rgb(255, 255, 255);
+      color: var(--general-color);
     }
     & > .fa-solid.fa-angle-right {
-      color: rgb(255, 255, 255);
+      color: var(--general-color);
     }
   }
 }
 .text-button-comment {
-  color: rgb(255, 255, 255);
+  color: var(--general-color);
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -365,13 +364,13 @@
   margin-right: 10px;
 }
 .text-button-comment.text-white {
-  color: rgb(212, 20, 67);
+  color: var(--accent-color1);
 }
 .fa-solid.fa-angle-right {
-  color: rgb(255, 255, 255);
+  color: var(--background-proccess-color);
 }
 .fa-solid.fa-angle-right.svg-white {
-  color: rgb(212, 20, 67);
+  color: var(--accent-color1);
 }
 .button-comment {
   justify-content: center;
@@ -433,7 +432,7 @@
   align-items: center;
   @media screen and (min-width: 760px) {
     margin-bottom: 30px;
-    color: rgb(255, 255, 255);
+    color: var(--general-color);
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -454,7 +453,7 @@
   @media screen and (min-width: 760px) {
     margin-bottom: 30px;
     width: 140px;
-    color: rgb(255, 255, 255);
+    color: var(--general-color);
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -469,7 +468,7 @@
 }
 .cityGeneral-text {
   @media screen and (min-width: 760px) {
-    color: rgb(0, 0, 0);
+    color: var(--special-color);
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -487,15 +486,9 @@
   margin-bottom: 25px;
 
   // не працює
-  &::after {
-    content: '';
-    display: block;
-    margin: 25px 0;
-    width: 180px;
-    background: red;
-  }
+
   @media screen and (min-width: 760px) {
-    color: rgb(144, 126, 130);
+    color: var(--color-greyvariaton1);
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -507,7 +500,7 @@
     }
   }
   @media screen and (min-width: 1110px) {
-    color: rgb(144, 126, 130);
+    color: var(--color-greyvariaton1);
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -521,7 +514,7 @@
   width: 155px;
   height: 1px;
   margin: 0px auto;
-  border-bottom: 1px solid rgb(225, 225, 225);
+  border-bottom: 1px solid var(--slider-comment-background);
   margin-bottom: 25px;
   margin-top: 25px;
   @media screen and (min-width: 760px) {
