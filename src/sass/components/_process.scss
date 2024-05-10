@@ -1,354 +1,248 @@
-$sec-process-bg-color: rgb(255, 245, 246);
-$pr-main-heading-color: rgb(212, 20, 67);
-$text-color-black: rgb(0, 0, 0);
-
-@mixin desc-header($pr-main-heading-color) {
-  color: $pr-main-heading-color;
-  font-family: 'Titan One', sans-serif;
+.process {
+  padding-top: 125px;
+  padding-bottom: 97px;
+  background-color: var(--background-proccess-color);
+}
+.title-process {
+  width: 198px;
+  height: 21px;
+  font-family: Titan One;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  color: var(--accent-color2);
+  @media screen and (min-width: 760px) {
+    width: 285px;
+    height: 30px;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1110px) {
+    width: 351px;
+    height: 34px;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 4%;
+  }
+}
+.title-made {
+  width: 200px;
+  height: 76px;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 4%;
+  text-align: center;
+  color: var(--accent-color1);
+  @media screen and (min-width: 760px) {
+    width: 429px;
+    height: 55px;
+    font-size: 48px;
+    line-height: 55px;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1110px) {
+    width: 534px;
+    height: 66px;
+    font-size: 58px;
+    line-height: 66px;
+  }
+}
+.block-process {
+  @media screen and (min-width: 760px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1110px) {
+    margin-bottom: 46px;
+  }
+}
+.img-cow {
+  margin-bottom: 46px;
+  @media screen and (min-width: 760px) {
+    margin-right: 20px;
+  }
+  @media screen and (min-width: 1110px) {
+    margin-right: 75px;
+  }
+}
+.text-tradition {
+  width: 265px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 162%;
+  margin: 0 auto;
+  margin-bottom: 47px;
+  color: var(--special-color);
+  @media screen and (min-width: 760px) {
+    width: 340px;
+    margin: 0;
+  }
+  @media screen and (min-width: 1110px) {
+    width: 465px;
+    font-size: 17px;
+    margin-bottom: 35px;
+  }
+}
+.tradition-information {
+  width: 260px;
+  font-family: DM Sans;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 162%;
+  margin-left: 12px;
+  margin-bottom: 15px;
+  color: var(--color-greyvariaton2);
+  @media screen and (min-width: 760px) {
+    width: 340px;
+    font-size: 14px;
+    line-height: 176%;
+    margin-left: 0;
+  }
+  @media screen and (min-width: 1110px) {
+    width: 463px;
+    line-height: 194%;
+  }
+}
+.text-trad-inform {
+  width: 250px;
+  margin-bottom: 45px;
+  @media screen and (min-width: 760px) {
+    width: 280px;
+    margin-bottom: 62px;
+  }
+  @media screen and (min-width: 1110px) {
+    margin-bottom: 45px;
+  }
+}
+.button-tradition {
+  width: 196px;
+  height: 46px;
+  border-radius: 22px;
+  margin-left: 12px;
+  margin-bottom: 39px;
+  cursor: pointer;
+  background: var(--general-color);
+  &:hover {
+    background-color: var(--accent-color1);
+  }
+  &:hover span {
+    color: var(--general-color);
+  }
+  @media screen and (min-width: 760px) {
+    margin-left: 0;
+  }
+}
+.tradition-span {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: var(--accent-color1);
+}
+.list-tradition {
+  @media screen and (min-width: 760px) {
+    display: flex;
+  }
+}
+.item-tradition:not(:last-child) {
+  margin-bottom: 38px;
+  @media screen and (min-width: 760px) {
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+}
+.numder-tradition {
+  font-family: Titan One;
   font-size: 36px;
   font-weight: 400;
   line-height: 41px;
-  letter-spacing: 4%;
-  text-align: left;
   text-transform: uppercase;
+  margin-bottom: 5px;
+  color: var(--accent-color1);
+  @media screen and (min-width: 760px) {
+    width: 147px;
+    font-size: 48px;
+    line-height: 55px;
+    margin-bottom: 13px;
+  }
+  @media screen and (min-width: 1110px) {
+    font-size: 58px;
+    line-height: 66px;
+    margin-bottom: 15px;
+  }
 }
-@mixin desc-text($text-color-black) {
-  color: $text-color-black;
-  font-family: 'DM Sans', sans-serif;
+.item-one::before {
+  content: '';
+  display: block;
+  width: 33px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url(/assets/img/mobile/1x/process/item-process1-mob-1x.webp);
+  background-repeat: no-repeat;
+  @media screen and (min-width: 760px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1110px) {
+    margin-bottom: 40px;
+  }
+}
+.item-two {
+  &::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+    background-image: url(/assets/img/mobile/1x/process/item-process2-mob-1x.webp);
+    background-repeat: no-repeat;
+    @media screen and (min-width: 760px) {
+      margin-bottom: 36px;
+    }
+    @media screen and (min-width: 1110px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+.item-three {
+  &::before {
+    content: '';
+    display: block;
+    width: 44px;
+    height: 50px;
+    margin-bottom: 16px;
+    background-image: url(/assets/img/mobile/1x/process/item-process3-mob-1x.webp);
+    background-repeat: no-repeat;
+    @media screen and (min-width: 760px) {
+      margin-bottom: 36px;
+    }
+    @media screen and (min-width: 1110px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+.tradition-elements {
+  width: 230px;
+  font-family: DM Sans;
   font-size: 12px;
   font-weight: 700;
   line-height: 170%;
-  letter-spacing: 0%;
-  text-align: left;
-}
-
-.section-process {
-  /* Rectangle 14 */
-  position: relative;
-  padding-top: 98px;
-  padding-bottom: 97px;
-  // width: 320px;
-  // height: 1688px;
-  // left: 0;
-  // right: 0;
-
-  background: $sec-process-bg-color;
-
-  .h3 {
-    color: rgb(255, 165, 186);
-    font-family: 'Titan One', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0%;
-    text-align: center;
-    text-transform: uppercase;
-    @media screen and (min-width: 768px) {
-      width: 285px;
-
-      font-size: 26px;
-      line-height: 30px;
-    }
+  color: var(--special-color);
+  @media screen and (min-width: 760px) {
+    width: 180px;
+    font-size: 14px;
+    line-height: 174%;
   }
-
-  .h2 {
-    color: $pr-main-heading-color;
-    font-family: 'Titan One', sans-serif;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 41px;
-    letter-spacing: 4%;
-    text-align: left;
-    text-transform: uppercase;
-  }
-
-  .process-heading {
-    display: block;
-    position: relative;
-    width: 200px;
-    height: 112px;
-    margin: 0 auto;
-    // top: 125px;
-    margin-bottom: 26px;
-    // margin-top: 125px;
-    @media (min-width: 768px) {
-      width: 429px;
-      margin: 0 auto;
-    }
-
-    .h2 {
-      position: absolute;
-      line-height: 39px;
-      text-align: center;
-      font-size: 34px;
-      margin: 0;
-      bottom: 0;
-      @media (min-width: 768px) {
-        width: 429px;
-        margin: 0 auto;
-
-        color: rgb(212, 20, 67);
-        font-family: Titan One;
-        font-size: 48px;
-        font-weight: 400;
-        line-height: 55px;
-        letter-spacing: 4%;
-        text-transform: uppercase;
-        // @include desc-header($pr-main-heading-color);
-        text-align: center;
-      }
-      // width: 200px;
-    }
-    .h3 {
-      position: absolute;
-      top: 0;
-      margin: 0;
-      @media (min-width: 768px) {
-        width: 429px;
-        margin: 0 auto;
-      }
-    }
-  }
-  .process-flex {
-    @media (min-width: 768px) {
-      display: flex;
-      justify-content: center;
-    }
-  }
-  .div-home-pic4 {
-    display: block;
-
-    width: 280px;
-    height: 279px;
-    background: url(../../assets/img/mobile/1x/process/cow-mob-1x.webp);
-    background-position: center;
-    @media (min-width: 768px) {
-      display: flex;
-      background: url(../../assets/img/tablet/1x/process/cow-tab-1x.webp);
-      width: 340px;
-      height: 339px;
-
-      margin-right: 20px;
-    }
-  }
-
-  .bg-home-pic4 {
-    /* home-pic4 1 */
-    display: block;
-    position: relative;
-    width: 280px;
-    height: 279px;
-    margin: 0 auto;
-    top: 26px;
-
-    background-size: cover;
-  }
-  .text-1 {
-    display: flex;
-    width: 220px;
-    height: 79px;
-
-    color: rgb(0, 0, 0);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 162%;
-    letter-spacing: 0%;
-    text-align: left;
-
-    margin: 0 auto;
-    margin-top: 46px;
-
-    @media (min-width: 768px) {
-      width: 340px;
-      font-size: 14px;
-      line-height: 176%;
-      text-align: left;
-    }
-  }
-  .text-2 {
-    position: relative;
-    width: 220px;
-    height: 155px;
-
-    color: rgb(144, 126, 130);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 162%;
-    letter-spacing: 0%;
-    text-align: left;
-
-    margin: 0 auto;
-    margin-top: 47px;
-
-    @media (min-width: 768px) {
-      width: 340px;
-      font-size: 14px;
-      line-height: 176%;
-      letter-spacing: 4%;
-    }
-  }
-  .bg-image {
-    display: block;
-    // position: absolute;
-    width: 320px;
-    height: 133px;
-    background-image: url(../../assets/img/mobile/1x/process/milk-spot-mob-1x.webp);
-    // top: 766px;
-  }
-  .button-rectangle-1 {
-    display: block;
-
-    /* Rectangle 1 */
-    position: relative;
-    width: 176px;
-    height: 44px;
-
-    border-radius: 22px;
-    background: rgb(255, 255, 255);
-
-    margin: 0 auto;
-    margin-top: 47px;
-
-    @media (min-width: 768px) {
-      margin-left: 0;
-    }
-    .button-group {
-      /* Group 2 */
-      position: relative;
-      width: 101.04px;
-      height: 44px;
-      margin: 0 auto;
-
-      button {
-        display: block;
-        position: absolute;
-
-        width: 83px;
-        height: 44px;
-
-        color: rgb(212, 20, 67);
-        font-family: 'DM Sans', sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 18px;
-        letter-spacing: 0%;
-        text-align: center;
-        border-width: 0;
-        background: rgb(255, 255, 255);
-
-        margin: 0 auto;
-        left: 0;
-        padding: 0;
-
-        p {
-          &:hover {
-            color: rgb(212, 20, 67);
-            text-decoration: underline !important;
-            // без !important - підкреслення не слухається стилів
-          }
-          &:visited {
-            color: rgb(212, 20, 67);
-          }
-        }
-      }
-      .button-arrow {
-        position: absolute;
-        right: 0;
-        margin-top: 18px;
-      }
-    }
-  }
-
-  .desc-group {
-    display: block;
-    position: relative;
-    width: 230px;
-    height: 156px;
-
-    @media (min-width: 768px) {
-      width: 180px;
-      height: 226px;
-      bottom: auto;
-    }
-
-    margin: 0 auto;
-    &.desc-group > .desc-group-h2 {
-      @include desc-header($pr-main-heading-color);
-      width: 98px;
-      height: 56px;
-      margin: 0;
-      margin-top: 16px;
-
-      @media (min-width: 768px) {
-        width: 98px;
-        height: 56px;
-
-        font-size: 48px;
-        font-weight: 400;
-        line-height: 55px;
-        letter-spacing: 4%;
-      }
-    }
-    &.desc-group > .desc-group-text {
-      @include desc-text($text-color-black);
-      width: 230px;
-      height: 36px;
-      position: absolute;
-      margin: 0;
-      bottom: 0;
-
-      @media (min-width: 768px) {
-        width: 180px;
-        height: 71px;
-
-        bottom: auto;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 174%;
-        letter-spacing: 0%;
-
-        margin-top: 38px;
-      }
-    }
-    &#one {
-      margin-top: 39px;
-
-      .div {
-        display: block;
-        width: 33px;
-        height: 50px;
-        background-image: url(../../assets/img/mobile/1x/process/item-process1-mob-1x.webp);
-      }
-    }
-
-    &#two {
-      margin-top: 38px;
-
-      .div {
-        display: block;
-        width: 50px;
-        height: 50px;
-        background-image: url(../../assets/img/tablet/1x/process/item-process2-tab-1x.webp);
-      }
-    }
-    &#three {
-      margin-top: 38px;
-
-      .div {
-        display: block;
-        width: 44px;
-        height: 50px;
-        background-image: url(../../assets/img/mobile/1x/process/item-process3-mob-1x.webp);
-      }
-    }
-  }
-  .desc-main {
-    @media (min-width: 768px) {
-      margin-top: 66px;
-      display: flex;
-      justify-content: center;
-    }
+  @media screen and (min-width: 1110px) {
+    width: 330px;
+    font-size: 16px;
+    line-height: 176%;
   }
 }
