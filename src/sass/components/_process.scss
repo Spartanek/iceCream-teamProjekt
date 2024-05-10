@@ -114,23 +114,29 @@ $text-color-black: rgb(0, 0, 0);
       display: flex;
       justify-content: center;
     }
-  }
-  .div-home-pic4 {
-    display: block;
-
-    width: 280px;
-    height: 279px;
-    background: url(../../assets/img/mobile/1x/process/cow-mob-1x.webp);
-    background-position: center;
-    @media (min-width: 768px) {
+    @media (min-width: 1110px) {
       display: flex;
-      background: url(../../assets/img/tablet/1x/process/cow-tab-1x.webp);
-      width: 340px;
-      height: 339px;
-
-      margin-right: 20px;
+      justify-content: center;
+      width: 1282px;
+      height: 534px;
     }
   }
+  // .div-home-pic4 {
+  //   display: block;
+
+  //   width: 280px;
+  //   height: 279px;
+  //   background: url(../../assets/img/mobile/1x/process/cow-mob-1x.webp);
+  //   background-position: center;
+  //   @media (min-width: 768px) {
+  //     display: flex;
+  //     background: url(../../assets/img/tablet/1x/process/cow-tab-1x.webp);
+  //     width: 340px;
+  //     height: 339px;
+
+  //     margin-right: 20px;
+  //   }
+  // }
 
   // .bg-home-pic4 {
   //   display: block;
@@ -145,7 +151,7 @@ $text-color-black: rgb(0, 0, 0);
   .text-1 {
     display: flex;
     width: 220px;
-    height: 79px;
+    // height: 79px;
 
     color: rgb(0, 0, 0);
     font-family: 'DM Sans', sans-serif;
@@ -163,6 +169,9 @@ $text-color-black: rgb(0, 0, 0);
       font-size: 14px;
       line-height: 176%;
       text-align: left;
+    }
+    @media (min-width: 1110px) {
+      width: 463px;
     }
   }
   .text-2 {
@@ -186,6 +195,11 @@ $text-color-black: rgb(0, 0, 0);
       font-size: 14px;
       line-height: 176%;
       letter-spacing: 4%;
+    }
+    @media (min-width: 1280px) {
+      width: 463px;
+      height: 155px;
+      line-height: 194%;
     }
   }
 
@@ -217,9 +231,9 @@ $text-color-black: rgb(0, 0, 0);
       height: 44px;
       margin: 0 auto;
 
-      button {
+      .button-process-read-more {
         display: block;
-        position: absolute;
+        // position: absolute;
 
         width: 83px;
         height: 44px;
@@ -233,6 +247,9 @@ $text-color-black: rgb(0, 0, 0);
         text-align: center;
         border-width: 0;
         background: rgb(255, 255, 255);
+        &:hover {
+          background: rgb(236, 235, 235);
+        }
 
         margin: 0 auto;
         left: 0;
@@ -249,10 +266,13 @@ $text-color-black: rgb(0, 0, 0);
           }
         }
       }
-      .button-arrow {
-        position: absolute;
-        right: 0;
-        margin-top: 18px;
+      // .button-arrow {
+      //   position: absolute;
+      //   right: 0;
+      //   margin-top: 18px;
+      // }
+      .svg-white {
+        color: var(--accent-color1);
       }
     }
   }

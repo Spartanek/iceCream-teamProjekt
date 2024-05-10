@@ -283,26 +283,17 @@ a {
     justify-content: center;
   }
 }
-.section-process .div-home-pic4 {
-  display: block;
-  width: 280px;
-  height: 279px;
-  background: url(../../assets/img/mobile/1x/process/cow-mob-1x.webp);
-  background-position: center;
-}
-@media (min-width: 768px) {
-  .section-process .div-home-pic4 {
+@media (min-width: 1110px) {
+  .section-process .process-flex {
     display: flex;
-    background: url(../../assets/img/tablet/1x/process/cow-tab-1x.webp);
-    width: 340px;
-    height: 339px;
-    margin-right: 20px;
+    justify-content: center;
+    width: 1282px;
+    height: 534px;
   }
 }
 .section-process .text-1 {
   display: flex;
   width: 220px;
-  height: 79px;
   color: rgb(0, 0, 0);
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
@@ -319,6 +310,11 @@ a {
     font-size: 14px;
     line-height: 176%;
     text-align: left;
+  }
+}
+@media (min-width: 1110px) {
+  .section-process .text-1 {
+    width: 463px;
   }
 }
 .section-process .text-2 {
@@ -341,6 +337,13 @@ a {
     font-size: 14px;
     line-height: 176%;
     letter-spacing: 4%;
+  }
+}
+@media (min-width: 1280px) {
+  .section-process .text-2 {
+    width: 463px;
+    height: 155px;
+    line-height: 194%;
   }
 }
 .section-process .button-rectangle-1 {
@@ -369,9 +372,8 @@ a {
   height: 44px;
   margin: 0 auto;
 }
-.section-process .button-rectangle-1 .button-group button {
+.section-process .button-rectangle-1 .button-group .button-process-read-more {
   display: block;
-  position: absolute;
   width: 83px;
   height: 44px;
   color: rgb(212, 20, 67);
@@ -387,17 +389,18 @@ a {
   left: 0;
   padding: 0;
 }
-.section-process .button-rectangle-1 .button-group button p:hover {
+.section-process .button-rectangle-1 .button-group .button-process-read-more:hover {
+  background: rgb(236, 235, 235);
+}
+.section-process .button-rectangle-1 .button-group .button-process-read-more p:hover {
   color: rgb(212, 20, 67);
   text-decoration: underline !important;
 }
-.section-process .button-rectangle-1 .button-group button p:visited {
+.section-process .button-rectangle-1 .button-group .button-process-read-more p:visited {
   color: rgb(212, 20, 67);
 }
-.section-process .button-rectangle-1 .button-group .button-arrow {
-  position: absolute;
-  right: 0;
-  margin-top: 18px;
+.section-process .button-rectangle-1 .button-group .svg-white {
+  color: var(--accent-color1);
 }
 .section-process .desc-group {
   display: block;
