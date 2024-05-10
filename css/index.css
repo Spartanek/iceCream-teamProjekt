@@ -354,6 +354,9 @@ a {
   margin: 0 auto;
   margin-top: 47px;
 }
+.section-process .button-rectangle-1:hover {
+  background: rgb(236, 235, 235);
+}
 @media (min-width: 768px) {
   .section-process .button-rectangle-1 {
     margin-left: 0;
