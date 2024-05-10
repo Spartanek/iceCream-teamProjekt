@@ -3,7 +3,35 @@
   height: 44px;
   border-radius: 22px;
   margin-bottom: 10px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--accent-color1);
+  &:hover,
+  :active,
+  :focus {
+    background: var(--general-color);
+    & > span {
+      color: var(--accent-color1);
+    }
+  }
+}
+.button {
+  width: 18;
+  height: 18;
+
+  background: var(--background-proccess-color);
+  cursor: pointer;
+  & .command-close {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &.command-close:hover,
+    :active,
+    :focus {
+      fill: var(--accent-color1);
+    }
+  }
 }
 .command-button span {
   font-family: DM Sans;
@@ -87,12 +115,7 @@
   line-height: 17px;
   color: var(--color-blackvariation1);
 }
-.button {
-  width: 18;
-  height: 18;
-  background: var(--background-proccess-color);
-  cursor: pointer;
-}
+
 .command-close {
   width: 18px;
   height: 18px;
@@ -127,7 +150,7 @@
   justify-content: center;
 
   &:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     @media screen and (min-width: 760px) {
       margin-bottom: 0;
     }

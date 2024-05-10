@@ -738,7 +738,37 @@ a {
   height: 44px;
   border-radius: 22px;
   margin-bottom: 10px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--accent-color1);
+}
+.command-button:hover,
+.command-button :active,
+.command-button :focus {
+  background: var(--general-color);
+}
+.command-button:hover > span,
+.command-button :active > span,
+.command-button :focus > span {
+  color: var(--accent-color1);
+}
+
+.button {
+  width: 18;
+  height: 18;
+  background: var(--background-proccess-color);
+  cursor: pointer;
+}
+.button .command-close {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button .command-close.command-close:hover,
+.button .command-close :active,
+.button .command-close :focus {
+  fill: var(--accent-color1);
 }
 
 .command-button span {
@@ -845,13 +875,6 @@ a {
   color: var(--color-blackvariation1);
 }
 
-.button {
-  width: 18;
-  height: 18;
-  background: var(--background-proccess-color);
-  cursor: pointer;
-}
-
 .command-close {
   width: 18px;
   height: 18px;
@@ -895,7 +918,7 @@ a {
   justify-content: center;
 }
 .item-command:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 760px) {
   .item-command:not(:last-child) {
@@ -1202,7 +1225,7 @@ a {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  display: flex;
+  transition-property: fill;
   flex-direction: column;
   text-align: center;
   position: absolute;
@@ -1213,13 +1236,26 @@ a {
 
 .products-list-item-button {
   border-radius: 50%;
-  color: var(--general-color);
+  background-color: var(--general-color);
   width: 40px;
   height: 40px;
   margin: 0 auto;
   display: flex;
   position: relative;
   bottom: -41px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.products-list-item-button:hover,
+.products-list-item-button :active,
+.products-list-item-button :focus {
+  background: var(--accent-color1);
+}
+.products-list-item-button:hover > svg,
+.products-list-item-button :active > svg,
+.products-list-item-button :focus > svg {
+  fill: var(--general-color);
 }
 @media screen and (min-width: 1200px) {
   .products-list-item-button {
