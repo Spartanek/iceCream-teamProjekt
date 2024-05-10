@@ -19,6 +19,6 @@
 
   function toggleMenu() {
     // на мобільному меню я змінюю клас is-hidden(якщо мобільне не приховане я його приховую, якщо воно приховане то я роблю не пррихованим)
-    refs.menu.classList.toggle('visually-hidden');
+    refs.menu.classList.toggle('is-hidden');
   }
 })();
