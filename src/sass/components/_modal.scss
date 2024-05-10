@@ -1,4 +1,6 @@
 .command-button {
+  display: block;
+  margin: 0 auto;
   width: 180px;
   height: 44px;
   border-radius: 22px;
@@ -15,6 +17,10 @@
       color: var(--accent-color1);
     }
   }
+}
+.modal-section {
+  background: rgb(255, 245, 246);
+  padding: 20px 0px;
 }
 .button {
   width: 18;
