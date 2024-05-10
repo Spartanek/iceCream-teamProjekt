@@ -77,6 +77,12 @@
   cursor: pointer;
   margin-right: 8px;
   background: var(--accent-color1);
+  &:hover{
+    background-color: var(--general-color);
+  }
+  &:hover span{
+    color: var(--accent-color1);
+  }
   & > span {
     font-family: DM Sans;
     font-size: 10px;
@@ -107,6 +113,12 @@
   border-radius: 20px;
   cursor: pointer;
   background: var(--general-color);
+  &:hover{
+    background-color: var(--accent-color1);
+  }
+  &:hover span{
+    color: var(--general-color);
+  }
   & > span {
     font-family: DM Sans;
     font-size: 10px;

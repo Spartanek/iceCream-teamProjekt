@@ -48,6 +48,12 @@
   border-radius: 22px;
   cursor: pointer;
   background: var(--general-color);
+  &:hover{
+    background-color: var(--accent-color1);
+  }
+  &:hover span{
+    color: var(--general-color);
+  }
   @media screen and (min-width: 760px) {
     width: 186px;
   }
@@ -60,7 +66,7 @@
 .button-mobile-menu-text {
   width: 80px;
   height: 44px;
-  color: rgb(212, 20, 67);
+  color: var(--accent-color1);
   font-family: DM Sans;
   font-size: 16px;
   font-weight: 700;
