@@ -2,7 +2,11 @@ footer {
   padding-bottom: 25px;
   background: rgb(255, 245, 246);
   @media screen and (min-width: 760px) {
-    padding-top: 165px;
+    padding-top: 160px;
+    padding-bottom: 20px;
+  }
+  @media screen and (min-width: 1110px) {
+    padding-bottom: 10px;
   }
 }
 .upper-footer-container {
@@ -10,6 +14,9 @@ footer {
   @media screen and (min-width: 760px) {
     display: flex;
     margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1110px) {
+    justify-content: space-around;
   }
 }
 .footer-subtitle {
@@ -30,6 +37,15 @@ footer {
     font-size: 26px;
     letter-spacing: 4%;
   }
+  @media screen and (min-width: 1100px) {
+    width: 480px;
+
+    font-size: 30px;
+
+    line-height: 34px;
+
+    margin-bottom: 15px;
+  }
 }
 .footer-title {
   color: rgb(212, 20, 67);
@@ -47,12 +63,23 @@ footer {
     line-height: 55px;
     letter-spacing: 6%;
   }
+  @media screen and (min-width: 1100px) {
+    width: 480px;
+
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 66px;
+  }
 }
 .footer-title-div {
   margin-bottom: 40px;
   @media screen and (min-width: 760px) {
     margin-right: 50px;
     margin-bottom: 90px;
+  }
+  @media screen and (min-width: 1110px) {
+    margin-right: 250px;
+    margin-bottom: 100px;
   }
 }
 .div-ul-footer {
@@ -96,11 +123,11 @@ footer {
   width: 18px;
   height: 18px;
 }
-.svg-footer-telegram {
+.svg-footer-trello {
   height: 15px;
   width: 20px;
 }
-.svg-footer-facebook {
+.svg-footer-discord {
   width: 15px;
   height: 20px;
 }
@@ -115,6 +142,12 @@ footer {
 
   @media screen and (min-width: 760px) {
     width: 300px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 186%;
+    letter-spacing: 2%;
+  }
+  @media screen and (min-width: 1110px) {
     font-size: 15px;
     font-weight: 700;
     line-height: 186%;
@@ -142,6 +175,12 @@ footer {
     height: 1px;
     background-color: var(--color);
     margin-bottom: 20px;
+    @media screen and (min-width: 760px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1110px) {
+      margin-bottom: 10px;
+    }
   }
 }
 .margin-footer-div {

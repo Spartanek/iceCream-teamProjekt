@@ -2364,7 +2364,13 @@ footer {
 }
 @media screen and (min-width: 760px) {
   footer {
-    padding-top: 165px;
+    padding-top: 160px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  footer {
+    padding-bottom: 10px;
   }
 }
 
@@ -2375,6 +2381,11 @@ footer {
   .upper-footer-container {
     display: flex;
     margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .upper-footer-container {
+    justify-content: space-around;
   }
 }
 
@@ -2399,6 +2410,14 @@ footer {
     letter-spacing: 4%;
   }
 }
+@media screen and (min-width: 1100px) {
+  .footer-subtitle {
+    width: 480px;
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 15px;
+  }
+}
 
 .footer-title {
   color: rgb(212, 20, 67);
@@ -2418,6 +2437,14 @@ footer {
     letter-spacing: 6%;
   }
 }
+@media screen and (min-width: 1100px) {
+  .footer-title {
+    width: 480px;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 66px;
+  }
+}
 
 .footer-title-div {
   margin-bottom: 40px;
@@ -2426,6 +2453,12 @@ footer {
   .footer-title-div {
     margin-right: 50px;
     margin-bottom: 90px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .footer-title-div {
+    margin-right: 250px;
+    margin-bottom: 100px;
   }
 }
 
@@ -2473,12 +2506,12 @@ footer {
   height: 18px;
 }
 
-.svg-footer-telegram {
+.svg-footer-trello {
   height: 15px;
   width: 20px;
 }
 
-.svg-footer-facebook {
+.svg-footer-discord {
   width: 15px;
   height: 20px;
 }
@@ -2494,6 +2527,14 @@ footer {
 @media screen and (min-width: 760px) {
   .telephone-footer-text {
     width: 300px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 186%;
+    letter-spacing: 2%;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .telephone-footer-text {
     font-size: 15px;
     font-weight: 700;
     line-height: 186%;
@@ -2524,6 +2565,16 @@ footer {
   height: 1px;
   background-color: var(--color);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 760px) {
+  .footer-after::before {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .footer-after::before {
+    margin-bottom: 10px;
+  }
 }
 
 .margin-footer-div {
