@@ -432,6 +432,19 @@ a {
   }
 }
 
+<<<<<<< Updated upstream
+=======
+.forModal-text {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.products {
+  padding-bottom: 90px;
+}
+
+>>>>>>> Stashed changes
 .products-subtitle {
   width: 142px;
   height: 21px;
