@@ -76,7 +76,10 @@
   border-radius: 20px;
   cursor: pointer;
   margin-right: 8px;
-  background: var(--accent-color1);
+  background-color: var(--accent-color1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     background-color: var(--general-color);
   }
@@ -111,8 +114,12 @@
   width: 83px;
   height: 24px;
   border-radius: 20px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  background-color: var(--general-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  background: var(--general-color);
+
   &:hover {
     background-color: var(--accent-color1);
   }

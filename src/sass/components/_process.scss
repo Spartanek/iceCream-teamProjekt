@@ -2,6 +2,25 @@
   padding-top: 125px;
   padding-bottom: 97px;
   background-color: var(--background-proccess-color);
+  background-image: url('../../assets/img/mobile/1x/process/milk-spot-mob-1x.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../../assets/img/mobile/2x/process/milk-spot.webp');
+  }
+
+  @media screen and (min-width: 1110px) {
+    background-image: url('../../assets/img/desktop/1x/process/milk-spot-comp-1x.webp');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../../assets/img/desktop/2x/process/milk-spot-comp-2x.webp');
+    }
+  }
 }
 .title-process {
   width: 198px;

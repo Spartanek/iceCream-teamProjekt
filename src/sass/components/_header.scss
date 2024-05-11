@@ -29,14 +29,12 @@
 }
 .item-element {
   height: 21px;
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-size: 15px;
   font-weight: 700;
   line-height: 21px;
   color: var(--general-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover {
     color: var(--accent-color1);
   }
@@ -65,10 +63,10 @@
     border-radius: 22px;
     cursor: pointer;
     background: var(--general-color);
-    &:hover{
+    &:hover {
       background-color: var(--accent-color1);
     }
-    &:hover span{
+    &:hover span {
       color: var(--general-color);
     }
   }

@@ -238,14 +238,11 @@ a {
 
 .item-element {
   height: 21px;
-  font-family: DM Sans;
+  font-family: "DM Sans";
   font-size: 15px;
   font-weight: 700;
   line-height: 21px;
   color: var(--general-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-element:hover {
   color: var(--accent-color1);
@@ -507,7 +504,10 @@ a {
   border-radius: 20px;
   cursor: pointer;
   margin-right: 8px;
-  background: var(--accent-color1);
+  background-color: var(--accent-color1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button-products:hover {
   background-color: var(--general-color);
@@ -551,8 +551,11 @@ a {
   width: 83px;
   height: 24px;
   border-radius: 20px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  background-color: var(--general-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  background: var(--general-color);
 }
 .hero-button-made:hover {
   background-color: var(--accent-color1);
@@ -1283,6 +1286,7 @@ a {
 .products-list-item-button:hover,
 .products-list-item-button :active,
 .products-list-item-button :focus {
+  cursor: pointer;
   background: var(--accent-color1);
 }
 .products-list-item-button:hover > svg,
@@ -1336,6 +1340,25 @@ a {
   padding-top: 125px;
   padding-bottom: 97px;
   background-color: var(--background-proccess-color);
+  background-image: url("../../assets/img/mobile/1x/process/milk-spot-mob-1x.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .process {
+    background-image: url("../../assets/img/mobile/2x/process/milk-spot.webp");
+  }
+}
+@media screen and (min-width: 1110px) {
+  .process {
+    background-image: url("../../assets/img/desktop/1x/process/milk-spot-comp-1x.webp");
+  }
+}
+@media screen and (min-width: 1110px) and (min-device-pixel-ratio: 2), screen and (min-width: 1110px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1110px) and (min-resolution: 192dpi), screen and (min-width: 1110px) and (min-resolution: 2dppx) {
+  .process {
+    background-image: url("../../assets/img/desktop/2x/process/milk-spot-comp-2x.webp");
+  }
 }
 
 .title-process {
