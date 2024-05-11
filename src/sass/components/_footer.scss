@@ -101,9 +101,17 @@ footer {
   width: 32px;
   height: 32px;
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 760px) {
     width: 35px;
     height: 35px;
+  }
+  &:hover,
+  :focus,
+  :active {
+    background-color: var(--accent-color1);
   }
 }
 .footer-svg {
