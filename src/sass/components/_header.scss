@@ -65,6 +65,12 @@
     border-radius: 22px;
     cursor: pointer;
     background: var(--general-color);
+    &:hover{
+      background-color: var(--accent-color1);
+    }
+    &:hover span{
+      color: var(--general-color);
+    }
   }
 }
 .span-now {

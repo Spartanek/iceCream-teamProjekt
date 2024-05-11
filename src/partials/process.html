@@ -1,81 +1,76 @@
-<!-- нотатка: браузер дивно реагує на letter-spacing у відсотках. -->
-<!-- У .text-1 має бути жирніший текст, але не виходить. -->
-<section class="section-process">
+<section class="process">
   <div class="container">
-    <div class="process-heading">
-      <h3 class="h3">tradition and love</h3>
-      <h2 class="h2">how it's made?</h2>
-    </div>
-    <div class="process-flex">
-      <div class="div-home-pic4">
-        <!-- <img
-          class="bg-home-pic4"
-          src="../assets/img/mobile/1x/process/cow-mob-1x.webp"
-          alt=""
-        /> -->
-      </div>
-      <div class="div-texts">
-        <p class="text-1">
+    <h1 class="title-process">tradition and love</h1>
+    <h2 class="title-process title-made">how it’s made?</h2>
+    <div class="block-process">
+      <picture>
+        <source
+          srcset="
+            /assets/img/desktop/1x/process/cow-comp-1x.webp 1x,
+            /assets/img/desktop/2x/process/cow-comp-2x.webp 2x
+          "
+          media="(min-width: 1110px)"
+        />
+        <source
+          srcset="
+            /assets/img/tablet/1x/process/cow-tab-1x.webp 1x,
+            /assets/img/tablet/2x/process/cow-tab-2x.webp 2x
+          "
+          media="(min-width: 760px)"
+        />
+        <source
+          srcset="
+            /assets/img/mobile/1x/process/cow-mob-1x.webp 1x,
+            /assets/img/mobile/2x/process/cow.webp        2x
+          "
+          media="(min-width: 0px)"
+        />
+        <img
+          class="img-cow"
+          src="/assets/img/mobile/2x/process/cow.webp"
+          alt="cow-milk"
+        />
+      </picture>
+      <div>
+        <p class="text-tradition">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
           cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
           justo fringilla.
         </p>
-        <p class="text-2">
+        <p class="tradition-information">
           Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
           Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
           suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-          tincidunt. Aliquam erat volutpat. Aenean accumsan.
+          tincidunt.
         </p>
-        <div class="button-rectangle-1">
-          <div class="button-group">
-            <button type="button">
-              <p style="text-decoration: none">Read More</p>
-            </button>
-            <svg
-              class="button-arrow"
-              width="8"
-              height="10"
-              viewBox="0 0 8 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.61633 1L6.04401 5L1.61633 9"
-                stroke="#D41443"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-        </div>
+        <p class="tradition-information text-trad-inform">
+          Aliquam erat volutpat. Aenean 
+          accumsan.
+        </p>
+        <button class="button-tradition">
+          <span class="tradition-span">Read more ></span>
+        </button>
       </div>
     </div>
-    <!-- <div class="bg-image"></div> -->
-    <div class="desc-main">
-      <div class="desc-group" id="one">
-        <div class="div"></div>
-        <h2 class="desc-group-h2">721</h2>
-        <p class="desc-group-text">
+    <ul class="list-tradition">
+      <li class="item-tradition">
+        <h2 class="numder-tradition item-one">721</h2>
+        <p class="tradition-elements">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
         </p>
-      </div>
-
-      <div class="desc-group" id="two">
-        <div class="div"></div>
-        <h2 class="desc-group-h2">16kg</h2>
-        <p class="desc-group-text">
+      </li>
+      <li class="item-tradition item-two">
+        <h2 class="numder-tradition">16kg</h2>
+        <p class="tradition-elements">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
         </p>
-      </div>
-
-      <div class="desc-group" id="three">
-        <div class="div"></div>
-        <h2 class="desc-group-h2">84</h2>
-        <p class="desc-group-text">
+      </li>
+      <li class="item-tradition">
+        <h2 class="numder-tradition item-three">84</h2>
+        <p class="tradition-elements">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
         </p>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 </section>
